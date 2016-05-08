@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="club">
+  <select id="get" resultType="java.util.HashMap">
+    SELECT * FROM clubs
+  </select>
+
+  <update id="create">
+		CREATE TABLE `clubs_prueba` (
+		  `club` varchar(45) NOT NULL,
+		  `email` varchar(45) DEFAULT NULL,
+		  PRIMARY KEY (`club`),
+		  UNIQUE KEY `un_clubs` (`email`)
+		) ENGINE=InnoDB DEFAULT CHARSET=utf8
+  </update>
+</mapper>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="persona">
+  <select id="get" resultType="java.util.HashMap" parameterType="java.util.HashMap">
+    SELECT *, CONCAT(nombre, ' ', ifnull(APELLIDO1, ""), ' ', ifnull(APELLIDO2, "")) nomb
+    FROM persona
+    <where>
+      <if test="id_persona!=null">id_persona = #{id_persona}</if>
+      <if test="usuario!=null">AND usuario = #{usuario}</if>
+      <if test="password!=null">AND persona = #{password}</if>
+      <if test="email!=null">AND email = #{email}</if>
+      <if test="nombre!=null">AND nombre = #{nombre}</if>
+      <if test="apellidos!=null">AND apellidos = #{apellidos}</if>
+      <if test="tipoIdentificacion==0">AND tipoIdentificacion = #{tipoIdentificacion}</if>
+      <if test="dni!=null">AND dni = #{dni}</if>
+      <if test="telefono1!=null">AND (telefono1 = #{telefono1} OR telefono2 = #{telefono1})</if>
+      <if test="telefono2!=null">AND (telefono1 = #{telefono2} OR telefono2 = #{telefono2})</if>
+    </where>
+  </select>
+
+  <select id="getPersona" resultType="java.util.HashMap" parameterType="java.util.HashMap">
+    SELECT * FROM persona where id_persona = #{id_persona}
+  </select>
+
+  <select id="getByMap" resultType="adrutas.com.dao.Persona" parameterType="java.util.HashMap">
+    SELECT *
+    FROM persona
+    <where>
+      <if test="usuario!=null">usuario = #{usuario}</if>
+      <if test="idPerfil!=null">AND idPerfil = #{idPerfil}</if>
+      <if test="password!=null">AND password = #{password}</if>
+      <if test="email!=null">AND email = #{email}</if>
+      <if test="nombre!=null">AND nombre = #{nombre}</if>
+      <if test="apellidos!=null">AND apellidos = #{apellidos}</if>
+      <if test="tipoIdentificacion==0">AND tipoIdentificacion = #{tipoIdentificacion}</if>
+      <if test="dni!=null">AND dni = #{dni}</if>
+      <if test="telefono1!=null">AND (telefono1 = #{telefono1} OR telefono2 = #{telefono1})</if>
+      <if test="telefono2!=null">AND (telefono1 = #{telefono2} OR telefono2 = #{telefono2})</if>
+    </where>
+  </select>
+
+  <select id="getCount" parameterType="java.util.HashMap" resultType="java.lang.Integer">
+    select count(*) cuenta from persona
+    <where>
+      <if test="usuario!=null">usuario = #{usuario}</if>
+      <if test="idPerfil!=null">AND idPerfil = #{idPerfil}</if>
+      <if test="email!=null">AND email = #{email}</if>
+      <if test="nombre!=null">AND nombre = #{nombre}</if>
+      <if test="apellidos!=null">AND apellidos = #{apellidos}</if>
+      <if test="tipoIdentificacion!=null">AND tipoIdentificacion = #{tipoIdentificacion}</if>
+      <if test="dni!=null">AND dni = #{dni}</if>
+      <if test="telefono1!=null">AND (telefono1 = #{telefono1} OR telefono2 = #{telefono1})</if>
+      <if test="telefono2!=null">AND (telefono1 = #{telefono2} OR telefono2 = #{telefono2})</if>
+    </where>
+  </select>
+
+  <select id="find" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+      SELECT a.id_persona, socio, CONCAT(nombre, ' ', ifnull(apellido1, ""), ' ', ifnull(apellido2, "")) nomb, a.*
+        FROM rutas.persona a
+        LEFT JOIN rutas.socio_telefono b ON a.id_persona = b.id_persona
+        LEFT JOIN rutas.socio_email c ON a.id_persona = c.id_persona
+    <where>
+      <if test="nombre!=null">CONCAT(nombre, ' ', ifnull(apellido1, ""), ' ', ifnull(apellido2, "")) like concat('%',#{nombre},'%') OR usuario like concat(#{nombre},'%')</if>
+      <if test="dni!=null">OR Replace(LTrim(Replace(dni, '0', ' ')), ' ', 0) LIKE CONCAT(#{dni}, '%')</if>
+      <if test="telefono!=null">OR b.telefono LIKE CONCAT(#{telefono}, '%')</if>
+      <if test="id_persona!=null">OR a.id_persona = #{id_persona}</if>
+      <if test="socio!=null">OR a.socio = #{socio}</if>
+      <if test="email!=null">OR c.email LIKE CONCAT(#{email}, '%')</if>
+    </where>
+       GROUP BY a.id_persona
+       LIMIT 10
+  </select>
+
+  <select id="findExact" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+      SELECT a.id_persona, socio, CONCAT(nombre, ' ', ifnull(apellido1, ""), ' ', ifnull(apellido2, "")) nomb, a.*
+        FROM rutas.persona a
+        LEFT JOIN rutas.socio_telefono b ON a.id_persona = b.id_persona
+        LEFT JOIN rutas.socio_email c ON a.id_persona = c.id_persona
+    <where>
+      <if test="nombre!=null">TRIM(UPPER(CONCAT(nombre, ' ', ifnull(apellido1, ""), ' ', ifnull(apellido2, "")))) = TRIM(#{nombre}) OR usuario = TRIM(#{nombre})</if>
+      <if test="dni!=null">OR Replace(LTrim(Replace(dni, '0', ' ')), ' ', 0) = #{dni}</if>
+      <if test="telefono!=null">OR b.telefono = #{telefono}</if>
+      <if test="id_persona!=null">OR a.id_persona = #{id_persona}</if>
+      <if test="socio!=null">OR a.socio = #{socio}</if>
+      <if test="email!=null">OR c.email = #{email}</if>
+    </where>
+       GROUP BY a.id_persona
+       LIMIT 2
+  </select>
+
+  <select id="getRole" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+    SELECT idPerfil FROM directiva
+     where current_date>=alta and (baja>=current_date or baja is null) and id_persona=#{id_persona}
+  </select>
+
+  <select id="getLista">
+   select bus, asiento, importe, apellidos, nombre, a.id_persona, imp_seguro_dia, telefono
+     from (
+           SELECT bus, asiento, importe, CONCAT(ifnull(apellido1, ""), ' ', ifnull(apellido2, "")) apellidos,
+                  nombre, a.id_persona, imp_seguro_dia
+             FROM salida_detalle a, persona b
+            where a.id_persona=b.id_persona and a.salida=1417
+          ) a
+LEFT JOIN (select id_persona, telefono from (select id_persona, orden, telefono from socio_telefono where telefono like '6%') a
+ group by id_persona
+          ) c ON a.id_persona = c.id_persona
+  </select>
+
+  <select id="getProximo" resultType="java.util.HashMap">
+		select (select id_persona+1
+		          from persona
+		         WHERE id_persona not in (9999, 8888)
+		      order by id_persona desc limit 1) id_persona,
+		       (select socio+1
+		          from persona
+		         WHERE id_persona not in (9999, 8888)
+		      order by socio desc limit 1) socio
+		from dual
+  </select>
+
+  <select id="getProximoSocio" resultType="java.lang.String">
+    select socio+1 from persona WHERE 5000>socio order by socio desc limit 1
+  </select>
+
+  <select id="getTelefonos" parameterType="java.lang.Integer" resultType="java.util.HashMap">
+    SELECT * FROM socio_telefono where id_persona=#{id_persona} order by orden
+  </select>
+
+  <select id="getEmails" parameterType="java.lang.Integer" resultType="java.util.HashMap">
+    SELECT * FROM socio_email where id_persona=#{id_persona} order by orden
+  </select>
+
+  <select id="getAllEmails" resultType="java.util.HashMap">
+    select * from
+    (select (select email from socio_email b where a.id_persona=b.id_persona and b.borrado is null order by orden limit 1) email,
+           CONCAT(nombre, ' ', ifnull(APELLIDO1, ""), ' ', ifnull(APELLIDO2, "")) nombre
+      from persona a
+     <!-- 
+     where a.id_persona in (367, 368)
+      -->
+    ) a
+    where email is not null
+  </select>
+
+  <select id="getEmailAntiguos" parameterType="java.lang.Integer" resultType="java.util.HashMap">
+    select email, CONCAT(nombre, ' ', apellido1, ' ', apellido2) nombre
+      from socio_email a, persona b
+     where a.id_persona = b.id_persona and
+          (   a.id_persona not in (SELECT id_persona FROM ficha where anyo=#{anyo} and importecuota!=0)
+           or a.id_persona in (SELECT id_persona FROM directiva where baja is null or baja>sysdate())
+          )
+  </select>
+
+  <select id="getFicha" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+    SELECT socio, a.nombre, CONCAT(ifnull(apellido1, ""), ' ', ifnull(apellido2, "")) apellidos, dni,
+         ifnull(nacimiento, "") nacimiento, ifnull(ingreso, "") ingreso, domicilio, sexo, poblacion, Provincia,
+         codigo_postal, if(correo, "SI", "NO") correo, dni, nacimiento, ingreso, domicilio, sexo, poblacion, Provincia, codigo_postal,
+         correo, pz_castilla, ifnull(c.nombre,"") licencia, importecuota, importelicencia, d.importe
+      FROM persona a, recibos d, ficha b left join licencias c on b.anyo=c.anyo and b.tipo_licencia=c.tipo_licencia
+     WHERE a.id_persona=b.id_persona and b.id_recibo=d.id_recibo and a.id_persona=#{id_persona} and b.anyo=#{anyo}
+  </select>
+
+  <select id="getFicha2" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+		SELECT b.importe,if(a.tipo_licencia='','S1D',a.tipo_licencia) tipo_licencia
+		  FROM ficha a,recibos b,salida c
+		 WHERE a.id_recibo=b.id_recibo and a.anyo=c.anyo and id_persona=#{id_persona} and c.salida=#{salida}
+  </select>
+
+  <select id="getNoSocios" resultType="java.util.HashMap">
+    SELECT * FROM rutas.persona where socio is null order by id_persona
+  </select>
+
+  <select id="countDni" parameterType="java.lang.String" resultType="java.lang.Integer">
+    select count(*) cuenta from persona where dni = #{dni}
+  </select>
+
+  <select id="getSocios" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+    SELECT *
+     FROM persona
+    where id_persona in (select id_persona from ficha where anyo in
+    <foreach item="anyo" collection="lAnyo" open="(" separator="," close=")">
+      #{anyo}
+    </foreach> 
+      and importecuota!=0)
+    <if test="no_email">
+      and id_persona not in (select id_persona from socio_email)
+    </if>
+    <if test="correo">
+      and correo
+    </if>
+    </select>
+  
+  <select id="getFichas" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+    SELECT *, (
+      SELECT count(*)
+        from salida_detalle c, salida d
+       where c.salida=d.salida and b.anyo=d.anyo and a.id_persona=c.id_persona) num_salidas,
+     ifnull((select email from socio_email d where a.id_persona=d.id_persona and d.Orden=0),'') 'E-mail1',
+     ifnull((select email from socio_email d where a.id_persona=d.id_persona and d.Orden=1),'') 'E-mail2',
+     ifnull((select email from socio_email d where a.id_persona=d.id_persona and d.Orden=2),'') 'E-mail3',
+     ifnull((select telefono from socio_telefono d where a.id_persona=d.id_persona and d.Orden=0),'') 'Phone1',
+     ifnull((select telefono from socio_telefono d where a.id_persona=d.id_persona and d.Orden=1),'') 'Phone2',
+     ifnull((select telefono from socio_telefono d where a.id_persona=d.id_persona and d.Orden=2),'') 'Phone3'
+     FROM persona a, ficha b
+    where a.id_persona=b.id_persona and b.importecuota!=0 and b.anyo in
+		<foreach item="anyo" collection="lAnyo" open="(" separator="," close=")">
+	    #{anyo}
+		</foreach>
+    <if test="no_email">
+      and a.id_persona not in (select id_persona from socio_email)
+    </if>
+  </select>
+
+  <select id="isDirectivo" parameterType="java.util.HashMap" resultType="java.lang.Boolean">
+    select case when #{id_persona} in (
+           select id_persona from salida a, salida_fecha b, directiva c
+          where a.salida=b.salida
+          and b.fecha_tipo=1
+          and fecha>=alta
+          and (baja>=fecha or baja is null)
+          and a.salida=#{salida}) then true
+         else false
+          end
+      from dual
+  </select>
+
+  <select id="findEmail" parameterType="java.lang.String" resultType="java.util.HashMap">
+		SELECT *
+		  FROM persona a, socio_email b
+		 where a.id_persona=b.id_persona
+		   and b.email=#{email}
+  </select>
+
+  <select id="getDatosGMail" parameterType="java.lang.Integer" resultType="java.util.HashMap">
+    select trim(concat(trim(nombre), ' ', trim(apellido1), ' ', trim(ifnull(apellido2, '')))) Name,
+       trim(nombre) 'Given Name', concat(trim(apellido1), ' ', trim(ifnull(apellido2, ''))) 'Family Name',
+           ifnull(nacimiento, '') Birthday, concat('Socios ',anyo) 'Group Membership',
+           ifnull((select email from socio_email d where a.id_persona=d.id_persona and d.Orden=0),'') 'E-mail 1 - Value',
+           ifnull((select email from socio_email d where a.id_persona=d.id_persona and d.Orden=1),'') 'E-mail 2 - Value',
+           ifnull((select email from socio_email d where a.id_persona=d.id_persona and d.Orden=2),'') 'E-mail 3 - Value',
+           ifnull((select telefono from socio_telefono d where a.id_persona=d.id_persona and d.Orden=0),'') 'Phone 1 - Value',
+           ifnull((select telefono from socio_telefono d where a.id_persona=d.id_persona and d.Orden=1),'') 'Phone 2 - Value',
+           ifnull((select telefono from socio_telefono d where a.id_persona=d.id_persona and d.Orden=2),'') 'Phone 3 - Value',
+       ifnull(domicilio, '') 'Address 1 - Street', ifnull(poblacion, '') 'Address 1 - City',
+           ifnull(codigo_postal, '') 'Address 1 - Postal Code'
+     from persona a, ficha c
+    where a.id_persona=c.id_persona and c.importecuota!=0 and anyo=#{anyo}
+ </select>
+
+  <select id="getDatosGMail2">
+     select 'Name,Given Name,Additional Name,Family Name,Yomi Name,Given Name Yomi,Additional Name Yomi,Family Name Yomi,Name Prefix,Name Suffix,Initials,Nickname,Short Name,Maiden Name,Birthday,Gender,Location,Billing Information,Directory Server,Mileage,Occupation,Hobby,Sensitivity,Priority,Subject,Notes,Group Membership,E-mail 1 - Type,E-mail 1 - Value,E-mail 2 - Type,E-mail 2 - Value,Phone 1 - Type,Phone 1 - Value,Address 1 - Type,Address 1 - Formatted,Address 1 - Street,Address 1 - City,Address 1 - PO Box,Address 1 - Region,Address 1 - Postal Code,Address 1 - Country,Address 1 - Extended Address' from dual
+    union
+    select concat(trim(concat(trim(nombre), ' ', trim(apellido1), ' ', trim(ifnull(apellido2, '')))), ',',
+           trim(nombre), ',,', concat(trim(apellido1), ' ', trim(ifnull(apellido2, ''))), ',,,,,,,,',
+           ifnull(usuario,''), ',,,', ifnull(nacimiento, ''), ',,,,,,,,,,,,* Socios ',anyo, ',* Home,', email, ',,,Home,',
+           ifnull((select telefono from socio_telefono d where a.id_persona=d.id_persona and d.Orden=0), ''), ',Home,"',
+           ifnull(domicilio, ''), '\n', ifnull(poblacion, ''), ' ', ifnull(codigo_postal, ''), '","', ifnull(domicilio, ''), '",', ifnull(poblacion, ''), ',,,', ifnull(codigo_postal, ''), ',,')
+     from persona a, socio_email b, ficha c
+    where a.id_persona=b.id_persona and b.orden=0 and a.id_persona=c.id_persona
+      and (c.importecuota!=0 or 2009>anyo)
+ </select>
+
+  <select id="getEmailAntiguosSocios">
+		  select email
+		  from (select email
+		    from socio_email a, ficha c, (SELECT min(orden) orden, id_persona from socio_email GROUP BY id_persona) b
+		   where a.id_persona=b.id_persona and a.orden=b.orden and a.id_persona=c.id_persona and c.importecuota!=0
+		     and a.id_persona not in (select id_persona from ficha where importecuota!=0 and anyo=2015)
+		group by a.id_persona) a group by email
+  </select>
+
+  <select id="getSimpatizantes" parameterType="java.lang.Integer" resultType="java.util.HashMap">
+      select nombre, email
+      from (select CONCAT(nombre, ' ', ifnull(APELLIDO1, ""), ' ', ifnull(APELLIDO2, "")) nombre, email
+        from socio_email a, persona b, ficha c,
+                 (SELECT min(orden) orden, id_persona from socio_email GROUP BY id_persona) d
+       where a.id_persona=b.id_persona and a.id_persona=d.id_persona and a.orden=d.orden and a.id_persona=c.id_persona and c.importecuota!=0
+         and a.id_persona not in (select id_persona from ficha where importecuota!=0 and anyo=#{anyo})
+    group by a.id_persona) a group by email
+  </select>
+
+  <update id="updateUltimos" parameterType="java.util.HashMap">
+    UPDATE socios SET id_persona=#{cont} WHERE id_persona=#{id_persona}
+  </update>
+
+  <update id="update" parameterType="java.util.HashMap">
+    UPDATE persona
+       SET usuario=#{usuario},nombre=#{nombre},apellido1=#{apellido1},apellido2=#{apellido2},domicilio=#{domicilio},
+                   codigo_postal=#{codigo_postal},poblacion=#{poblacion},provincia=#{provincia},
+                   tipoIdentificacion=#{tipoIdentificacion},dni=#{dni},correo=#{correo},nota=#{nota},ingreso=#{ingreso},
+                   nacimiento=#{nacimiento},sexo=#{sexo},pz_castilla=#{pz_castilla},vetado=#{vetado},veto=#{veto},
+                   pasaporte=#{pasaporte},cad_pasaporte=#{cad_pasaporte}
+     WHERE id_persona = #{id_persona}
+  </update>
+
+  <update id="update2" parameterType="java.util.HashMap">
+    UPDATE persona
+       SET usuario=#{usuario},nombre=#{nombre},apellido1=#{apellido1},apellido2=#{apellido2},domicilio=#{domicilio},
+                   codigo_postal=#{codigo_postal},poblacion=#{poblacion},provincia=#{provincia},
+                   tipoIdentificacion=#{tipoIdentificacion},dni=#{dni},correo=#{correo},ingreso=#{ingreso},
+                   nacimiento=#{nacimiento},sexo=#{sexo},pz_castilla=#{pz_castilla},
+                   pasaporte=#{pasaporte},cad_pasaporte=#{cad_pasaporte}
+     WHERE id_persona = #{id_persona}
+  </update>
+
+  <update id="updateSocio" parameterType="java.util.HashMap">
+    UPDATE persona
+       SET socio=#{socio}
+     WHERE id_persona = #{id_persona}
+  </update>
+
+  <update id="putPassword" parameterType="java.util.HashMap">
+    UPDATE persona
+       SET password=#{password}
+     WHERE id_persona = #{id_persona}
+  </update>
+
+  <insert id="insert" parameterType="java.util.HashMap">
+    INSERT INTO persona (id_persona,socio,usuario,nombre,apellido1,apellido2,
+                         domicilio,codigo_postal,poblacion,provincia,tipoIdentificacion,dni,correo,
+                         nota,ingreso,nacimiento,sexo,pz_castilla,vetado,veto,
+                         pasaporte,cad_pasaporte)
+                 VALUES (#{id_persona},#{socio},#{usuario},UPPER(#{nombre}),UPPER(#{apellido1}),UPPER(#{apellido2}),
+                         #{domicilio},#{codigo_postal},#{poblacion},#{provincia},#{tipoIdentificacion},#{dni},#{correo},
+                         #{nota},#{ingreso},#{nacimiento},#{sexo},#{pz_castilla},#{vetado},#{veto},
+                         #{pasaporte},#{cad_pasaporte})
+  </insert>
+
+  <insert id="insert2" parameterType="java.util.HashMap">
+    INSERT INTO persona (id_persona,socio,usuario,nombre,apellido1,apellido2,
+                         domicilio,codigo_postal,poblacion,provincia,tipoIdentificacion,dni,correo,
+                         ingreso,nacimiento,sexo,pz_castilla,pasaporte,cad_pasaporte)
+                 VALUES (#{id_persona},#{socio},#{usuario},UPPER(#{nombre}),UPPER(#{apellido1}),UPPER(#{apellido2}),
+                         #{domicilio},#{codigo_postal},#{poblacion},#{provincia},#{tipoIdentificacion},#{dni},#{correo},
+                         #{ingreso},#{nacimiento},#{sexo},#{pz_castilla},#{pasaporte},#{cad_pasaporte})
+  </insert>
+
+  <insert id="insertTelefono" parameterType="java.util.HashMap">
+    insert into socio_telefono
+	  <choose>
+	    <when test="nota==null">
+    (id_persona,telefono,orden) values (#{id_persona},#{telefono},#{orden})
+	    </when>
+	    <otherwise>
+    (id_persona,telefono,nota,orden) values (#{id_persona},#{telefono},#{nota},#{orden})
+	    </otherwise>
+	  </choose>
+  </insert>
+
+  <insert id="insertEmail" parameterType="java.util.ArrayList">
+    insert into socio_email
+    <choose>
+      <when test="nota==null">
+    (id_persona,email,orden) values (#{id_persona},#{email},#{orden})
+      </when>
+      <otherwise>
+    (id_persona,email,nota,orden) values (#{id_persona},#{email},#{nota},#{orden})
+      </otherwise>
+    </choose>
+  </insert>
+
+  <insert id="insOpcion" parameterType="java.util.ArrayList">
+    insert into ficha_opcion (id_persona,anyo,id_ficha,tipo_opcion)
+    values (#{id_persona},#{anyo},#{id_ficha},#{tipo_opcion})
+  </insert>
+
+  <delete id="delete" parameterType="java.lang.String">
+    DELETE FROM persona
+     WHERE usuario = #{usuario}
+  </delete>
+
+  <delete id="deleteTelefono" parameterType="java.lang.Integer">
+    DELETE FROM socio_telefono
+     WHERE id_persona=#{id_persona}
+  </delete>
+
+  <delete id="deleteEmail" parameterType="java.lang.Integer">
+    DELETE FROM socio_email
+     WHERE id_persona=#{id_persona}
+  </delete>
+
+  <delete id="delOpciones" parameterType="java.util.HashMap">
+    DELETE FROM ficha_opcion WHERE id_persona=#{id_persona} and anyo=#{anyo} and id_ficha=#{id_ficha}
+  </delete>
+</mapper>

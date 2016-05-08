@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="MapSource 6.11.6" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+  <metadata>
+    <link href="http://www.garmin.com">
+      <text>Garmin International</text>
+    </link>
+    <time>2014-03-29T16:20:01Z</time>
+    <bounds maxlat="40.814520" maxlon="-3.767530" minlat="40.740452" minlon="-3.825711"/>
+  </metadata>
+
+  <trk>
+    <name>2014-05-18 B hoyo cerrado</name>
+    <extensions>
+      <gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+        <gpxx:DisplayColor>Black</gpxx:DisplayColor>
+      </gpxx:TrackExtension>
+    </extensions>
+    <trkseg>
+      <trkpt lat="40.740452" lon="-3.825237"/>
+      <trkpt lat="40.741036" lon="-3.825414"/>
+      <trkpt lat="40.741126" lon="-3.825414"/>
+      <trkpt lat="40.741799" lon="-3.825474"/>
+      <trkpt lat="40.742024" lon="-3.825474"/>
+      <trkpt lat="40.742698" lon="-3.825711"/>
+      <trkpt lat="40.742877" lon="-3.825711"/>
+      <trkpt lat="40.743506" lon="-3.825711"/>
+      <trkpt lat="40.743551" lon="-3.825711"/>
+      <trkpt lat="40.744135" lon="-3.825711"/>
+      <trkpt lat="40.744404" lon="-3.825711"/>
+      <trkpt lat="40.744944" lon="-3.824466"/>
+      <trkpt lat="40.745348" lon="-3.824229"/>
+      <trkpt lat="40.745527" lon="-3.823932"/>
+      <trkpt lat="40.745572" lon="-3.823873"/>
+      <trkpt lat="40.745842" lon="-3.823458"/>
+      <trkpt lat="40.745887" lon="-3.823458"/>
+      <trkpt lat="40.746336" lon="-3.823280"/>
+      <trkpt lat="40.747144" lon="-3.822924"/>
+      <trkpt lat="40.747863" lon="-3.822746"/>
+      <trkpt lat="40.748402" lon="-3.822628"/>
+      <trkpt lat="40.749255" lon="-3.822865"/>
+      <trkpt lat="40.749345" lon="-3.822865"/>
+      <trkpt lat="40.749884" lon="-3.823161"/>
+      <trkpt lat="40.749929" lon="-3.823161"/>
+      <trkpt lat="40.750558" lon="-3.823280"/>
+      <trkpt lat="40.751232" lon="-3.823636"/>
+      <trkpt lat="40.751277" lon="-3.823636"/>
+      <trkpt lat="40.752040" lon="-3.823695"/>
+      <trkpt lat="40.752804" lon="-3.823695"/>
+      <trkpt lat="40.752849" lon="-3.823754"/>
+      <trkpt lat="40.753433" lon="-3.823873"/>
+      <trkpt lat="40.753477" lon="-3.823873"/>
+      <trkpt lat="40.753837" lon="-3.824051"/>
+      <trkpt lat="40.753882" lon="-3.824051"/>
+      <trkpt lat="40.754196" lon="-3.823932"/>
+      <trkpt lat="40.754870" lon="-3.823221"/>
+      <trkpt lat="40.754915" lon="-3.823221"/>
+      <trkpt lat="40.755544" lon="-3.822984"/>
+      <trkpt lat="40.755544" lon="-3.822865"/>
+      <trkpt lat="40.756487" lon="-3.822924"/>
+      <trkpt lat="40.756532" lon="-3.822924"/>
+      <trkpt lat="40.757250" lon="-3.822924"/>
+      <trkpt lat="40.757295" lon="-3.822924"/>
+      <trkpt lat="40.757834" lon="-3.823399"/>
+      <trkpt lat="40.757924" lon="-3.823399"/>
+      <trkpt lat="40.758418" lon="-3.823636"/>
+      <trkpt lat="40.758463" lon="-3.823636"/>
+      <trkpt lat="40.758912" lon="-3.823636"/>
+      <trkpt lat="40.758957" lon="-3.823636"/>
+      <trkpt lat="40.759451" lon="-3.823991"/>
+      <trkpt lat="40.759496" lon="-3.823991"/>
+      <trkpt lat="40.759945" lon="-3.823991"/>
+      <trkpt lat="40.759990" lon="-3.823991"/>
+      <trkpt lat="40.760260" lon="-3.823991"/>
+      <trkpt lat="40.760305" lon="-3.823991"/>
+      <trkpt lat="40.760799" lon="-3.823991"/>
+      <trkpt lat="40.761293" lon="-3.823755"/>
+      <trkpt lat="40.761338" lon="-3.823696"/>
+      <trkpt lat="40.761742" lon="-3.823222"/>
+      <trkpt lat="40.761742" lon="-3.822866"/>
+      <trkpt lat="40.762012" lon="-3.822688"/>
+      <trkpt lat="40.762191" lon="-3.822688"/>
+      <trkpt lat="40.762551" lon="-3.822569"/>
+      <trkpt lat="40.762595" lon="-3.822451"/>
+      <trkpt lat="40.762865" lon="-3.822213"/>
+      <trkpt lat="40.762910" lon="-3.821858"/>
+      <trkpt lat="40.763134" lon="-3.821680"/>
+      <trkpt lat="40.763224" lon="-3.821620"/>
+      <trkpt lat="40.763584" lon="-3.821324"/>
+      <trkpt lat="40.763629" lon="-3.821324"/>
+      <trkpt lat="40.764212" lon="-3.820968"/>
+      <trkpt lat="40.764257" lon="-3.820968"/>
+      <trkpt lat="40.764886" lon="-3.820849"/>
+      <trkpt lat="40.766009" lon="-3.820197"/>
+      <trkpt lat="40.766324" lon="-3.819901"/>
+      <trkpt lat="40.766368" lon="-3.819901"/>
+      <trkpt lat="40.766773" lon="-3.819841"/>
+      <trkpt lat="40.766862" lon="-3.819782"/>
+      <trkpt lat="40.767132" lon="-3.819189"/>
+      <trkpt lat="40.767177" lon="-3.818774"/>
+      <trkpt lat="40.767716" lon="-3.818714"/>
+      <trkpt lat="40.767716" lon="-3.818655"/>
+      <trkpt lat="40.768120" lon="-3.818596"/>
+      <trkpt lat="40.768749" lon="-3.818003"/>
+      <trkpt lat="40.768749" lon="-3.817706"/>
+      <trkpt lat="40.769063" lon="-3.817350"/>
+      <trkpt lat="40.769063" lon="-3.817173"/>
+      <trkpt lat="40.769153" lon="-3.816935"/>
+      <trkpt lat="40.769153" lon="-3.816579"/>
+      <trkpt lat="40.769153" lon="-3.816046"/>
+      <trkpt lat="40.769153" lon="-3.815986"/>
+      <trkpt lat="40.769423" lon="-3.815690"/>
+      <trkpt lat="40.769063" lon="-3.815216"/>
+      <trkpt lat="40.768974" lon="-3.815216"/>
+      <trkpt lat="40.768659" lon="-3.815097"/>
+      <trkpt lat="40.768300" lon="-3.814978"/>
+      <trkpt lat="40.768300" lon="-3.814919"/>
+      <trkpt lat="40.768300" lon="-3.814267"/>
+      <trkpt lat="40.768300" lon="-3.813733"/>
+      <trkpt lat="40.768749" lon="-3.813318"/>
+      <trkpt lat="40.768794" lon="-3.813318"/>
+      <trkpt lat="40.769423" lon="-3.813496"/>
+      <trkpt lat="40.769468" lon="-3.813496"/>
+      <trkpt lat="40.769782" lon="-3.813555"/>
+      <trkpt lat="40.769827" lon="-3.813555"/>
+      <trkpt lat="40.770231" lon="-3.813081"/>
+      <trkpt lat="40.770276" lon="-3.813081"/>
+      <trkpt lat="40.770590" lon="-3.812725"/>
+      <trkpt lat="40.770635" lon="-3.812665"/>
+      <trkpt lat="40.770815" lon="-3.812428"/>
+      <trkpt lat="40.771040" lon="-3.812191"/>
+      <trkpt lat="40.771085" lon="-3.812132"/>
+      <trkpt lat="40.771579" lon="-3.811835"/>
+      <trkpt lat="40.771668" lon="-3.811776"/>
+      <trkpt lat="40.772028" lon="-3.811776"/>
+      <trkpt lat="40.772207" lon="-3.811776"/>
+      <trkpt lat="40.772522" lon="-3.812072"/>
+      <trkpt lat="40.772612" lon="-3.812132"/>
+      <trkpt lat="40.773106" lon="-3.812072"/>
+      <trkpt lat="40.773151" lon="-3.812072"/>
+      <trkpt lat="40.773555" lon="-3.812013"/>
+      <trkpt lat="40.773735" lon="-3.812013"/>
+      <trkpt lat="40.774094" lon="-3.812013"/>
+      <trkpt lat="40.774319" lon="-3.811894"/>
+      <trkpt lat="40.774813" lon="-3.811479"/>
+      <trkpt lat="40.774947" lon="-3.811479"/>
+      <trkpt lat="40.775352" lon="-3.811301"/>
+      <trkpt lat="40.775352" lon="-3.811242"/>
+      <trkpt lat="40.775756" lon="-3.810530"/>
+      <trkpt lat="40.775801" lon="-3.810471"/>
+      <trkpt lat="40.776025" lon="-3.810175"/>
+      <trkpt lat="40.776115" lon="-3.809997"/>
+      <trkpt lat="40.776430" lon="-3.809107"/>
+      <trkpt lat="40.776699" lon="-3.808100"/>
+      <trkpt lat="40.776699" lon="-3.807685"/>
+      <trkpt lat="40.777103" lon="-3.807151"/>
+      <trkpt lat="40.777103" lon="-3.806795"/>
+      <trkpt lat="40.777328" lon="-3.806321"/>
+      <trkpt lat="40.777418" lon="-3.806024"/>
+      <trkpt lat="40.777822" lon="-3.805372"/>
+      <trkpt lat="40.777822" lon="-3.804957"/>
+      <trkpt lat="40.777867" lon="-3.804838"/>
+      <trkpt lat="40.778316" lon="-3.804186"/>
+      <trkpt lat="40.778361" lon="-3.804067"/>
+      <trkpt lat="40.778585" lon="-3.803118"/>
+      <trkpt lat="40.778675" lon="-3.802940"/>
+      <trkpt lat="40.778810" lon="-3.802288"/>
+      <trkpt lat="40.778855" lon="-3.802050"/>
+      <trkpt lat="40.778990" lon="-3.801694"/>
+      <trkpt lat="40.778990" lon="-3.801220"/>
+      <trkpt lat="40.779529" lon="-3.801042"/>
+      <trkpt lat="40.779798" lon="-3.800508"/>
+      <trkpt lat="40.780068" lon="-3.800152"/>
+      <trkpt lat="40.780113" lon="-3.800152"/>
+      <trkpt lat="40.780652" lon="-3.800152"/>
+      <trkpt lat="40.781056" lon="-3.800152"/>
+      <trkpt lat="40.781146" lon="-3.800152"/>
+      <trkpt lat="40.781595" lon="-3.799974"/>
+      <trkpt lat="40.781685" lon="-3.799974"/>
+      <trkpt lat="40.781999" lon="-3.799974"/>
+      <trkpt lat="40.782089" lon="-3.799974"/>
+      <trkpt lat="40.782538" lon="-3.799737"/>
+      <trkpt lat="40.783032" lon="-3.799737"/>
+      <trkpt lat="40.783122" lon="-3.799737"/>
+      <trkpt lat="40.783302" lon="-3.799322"/>
+      <trkpt lat="40.783391" lon="-3.799322"/>
+      <trkpt lat="40.783706" lon="-3.799322"/>
+      <trkpt lat="40.783975" lon="-3.799322"/>
+      <trkpt lat="40.784425" lon="-3.799085"/>
+      <trkpt lat="40.784514" lon="-3.799085"/>
+      <trkpt lat="40.784964" lon="-3.798788"/>
+      <trkpt lat="40.785008" lon="-3.798788"/>
+      <trkpt lat="40.785480" lon="-3.798614"/>
+      <trkpt lat="40.785525" lon="-3.798614"/>
+      <trkpt lat="40.785929" lon="-3.798555"/>
+      <trkpt lat="40.785974" lon="-3.798496"/>
+      <trkpt lat="40.786289" lon="-3.798258"/>
+      <trkpt lat="40.786333" lon="-3.798258"/>
+      <trkpt lat="40.786558" lon="-3.797072"/>
+      <trkpt lat="40.786558" lon="-3.796894"/>
+      <trkpt lat="40.787232" lon="-3.796597"/>
+      <trkpt lat="40.787636" lon="-3.796597"/>
+      <trkpt lat="40.787950" lon="-3.796597"/>
+      <trkpt lat="40.788355" lon="-3.796419"/>
+      <trkpt lat="40.788624" lon="-3.796241"/>
+      <trkpt lat="40.788939" lon="-3.795173"/>
+      <trkpt lat="40.789118" lon="-3.794698"/>
+      <trkpt lat="40.789118" lon="-3.794758"/>
+      <trkpt lat="40.790106" lon="-3.794639"/>
+      <trkpt lat="40.790151" lon="-3.794639"/>
+      <trkpt lat="40.790556" lon="-3.795173"/>
+      <trkpt lat="40.791005" lon="-3.795529"/>
+      <trkpt lat="40.791723" lon="-3.795826"/>
+      <trkpt lat="40.791768" lon="-3.795826"/>
+      <trkpt lat="40.792487" lon="-3.796182"/>
+      <trkpt lat="40.792622" lon="-3.796241"/>
+      <trkpt lat="40.793026" lon="-3.796656"/>
+      <trkpt lat="40.793026" lon="-3.796716"/>
+      <trkpt lat="40.793700" lon="-3.797072"/>
+      <trkpt lat="40.793924" lon="-3.797250"/>
+      <trkpt lat="40.793969" lon="-3.797309"/>
+      <trkpt lat="40.794418" lon="-3.797428"/>
+      <trkpt lat="40.794598" lon="-3.797428"/>
+      <trkpt lat="40.794867" lon="-3.797606"/>
+      <trkpt lat="40.795002" lon="-3.797665"/>
+      <trkpt lat="40.795406" lon="-3.797546"/>
+      <trkpt lat="40.795496" lon="-3.797546"/>
+      <trkpt lat="40.795990" lon="-3.797428"/>
+      <trkpt lat="40.796305" lon="-3.797131"/>
+      <trkpt lat="40.796439" lon="-3.797131"/>
+      <trkpt lat="40.796709" lon="-3.797190"/>
+      <trkpt lat="40.796799" lon="-3.797250"/>
+      <trkpt lat="40.797068" lon="-3.797428"/>
+      <trkpt lat="40.797113" lon="-3.797428"/>
+      <trkpt lat="40.797428" lon="-3.797606"/>
+      <trkpt lat="40.798146" lon="-3.797190"/>
+      <trkpt lat="40.798461" lon="-3.796597"/>
+      <trkpt lat="40.798506" lon="-3.796597"/>
+      <trkpt lat="40.798955" lon="-3.796300"/>
+      <trkpt lat="40.799045" lon="-3.796300"/>
+      <trkpt lat="40.799584" lon="-3.796004"/>
+      <trkpt lat="40.799628" lon="-3.796004"/>
+      <trkpt lat="40.800033" lon="-3.795292"/>
+      <trkpt lat="40.800437" lon="-3.795292"/>
+      <trkpt lat="40.801021" lon="-3.794876"/>
+      <trkpt lat="40.801440" lon="-3.794720">
+        <ele>1230.144287</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.801520" lon="-3.794190">
+        <ele>1231.105713</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.801700" lon="-3.793640">
+        <ele>1230.625000</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.802580" lon="-3.792070">
+        <ele>1232.066895</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.802980" lon="-3.791450">
+        <ele>1232.547607</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.803900" lon="-3.790230">
+        <ele>1226.298828</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.803940" lon="-3.789040">
+        <ele>1223.415039</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.804260" lon="-3.788430">
+        <ele>1220.050293</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.804710" lon="-3.788030">
+        <ele>1218.608398</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.804960" lon="-3.787470">
+        <ele>1216.205078</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.806170" lon="-3.786300">
+        <ele>1208.995117</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.806930" lon="-3.786040">
+        <ele>1203.708008</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.807460" lon="-3.785580">
+        <ele>1202.746582</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.808090" lon="-3.785390">
+        <ele>1201.785400</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.809350" lon="-3.785240">
+        <ele>1196.978760</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.809610" lon="-3.785110">
+        <ele>1195.055908</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.809830" lon="-3.784590">
+        <ele>1193.133301</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.809950" lon="-3.784000">
+        <ele>1190.249512</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.810430" lon="-3.783020">
+        <ele>1185.923584</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.810810" lon="-3.782320">
+        <ele>1181.117188</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.811120" lon="-3.782080">
+        <ele>1179.194092</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.811420" lon="-3.782080">
+        <ele>1178.713623</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.812250" lon="-3.782290">
+        <ele>1177.752197</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.813040" lon="-3.782940">
+        <ele>1169.100586</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.813900" lon="-3.783480">
+        <ele>1163.332520</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.814140" lon="-3.783620">
+        <ele>1161.890625</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.814410" lon="-3.783470">
+        <ele>1159.967773</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.814520" lon="-3.783150">
+        <ele>1159.967773</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.814120" lon="-3.782620">
+        <ele>1156.122559</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.813660" lon="-3.781560">
+        <ele>1152.758057</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.813600" lon="-3.780280">
+        <ele>1151.796875</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.813390" lon="-3.779410">
+        <ele>1150.835449</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.813440" lon="-3.778470">
+        <ele>1151.796875</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.813270" lon="-3.778080">
+        <ele>1152.277344</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.812850" lon="-3.777480">
+        <ele>1154.680664</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.811740" lon="-3.776420">
+        <ele>1156.122559</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.811320" lon="-3.775600">
+        <ele>1157.083984</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.811270" lon="-3.775230">
+        <ele>1157.564697</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.811580" lon="-3.772090">
+        <ele>1151.316162</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.812520" lon="-3.769910">
+        <ele>1146.989990</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.813250" lon="-3.768620">
+        <ele>1146.509521</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.813220" lon="-3.768490">
+        <ele>1146.028809</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.813430" lon="-3.767630">
+        <ele>1146.028809</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="40.813390" lon="-3.767530">
+        <ele>1146.028809</ele>
+        <extensions>
+          <gpxx:TrackPointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd">
+            <gpxx:Depth>0.002792</gpxx:Depth>
+          </gpxx:TrackPointExtension>
+        </extensions>
+      </trkpt>
+    </trkseg>
+  </trk>
+
+</gpx>

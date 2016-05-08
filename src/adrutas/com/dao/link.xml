@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="link">
+  <select id="count" resultType="java.lang.Integer" parameterType="java.lang.String">
+    select count(*) cuenta from link where link=#{link}
+  </select>
+
+  <select id="get" resultType="java.util.HashMap" parameterType="java.lang.String">
+		select CONCAT(nombre, ' ', ifnull(apellido1, ""), ' ', ifnull(apellido2, "")) nomb, a.*
+		  from persona a, link b where a.id_persona=b.id_persona and link=#{link}
+  </select>
+
+  <delete id="delete" parameterType="java.util.HashMap">
+    DELETE FROM link
+     WHERE id_persona=#{id_persona}
+        OR #{fecha}>date_add(fecha, interval 2 day)
+  </delete>
+
+  <delete id="delLink" parameterType="java.lang.String">
+    DELETE FROM link
+     WHERE link=#{link}
+  </delete>
+
+  <insert id="insert" parameterType="java.util.ArrayList">
+    insert into link (id_persona, fecha, link) values (#{id_persona}, #{fecha}, #{link})
+  </insert>
+</mapper>

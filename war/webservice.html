@@ -1,0 +1,161 @@
+﻿<html>
+<head>
+    <title> JavaScript Client Test</title>
+    <script src="md5.min.js"></script>
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="xml2json.min.js"></script>
+    <script type="text/javascript">
+		var x2js = new X2JS();
+		var data;
+
+		var server = "https://fmmlicencias.com";
+
+        function formatDate(date) {
+            var yyyy = date.getFullYear().toString();
+            var MM = (date.getMonth()+1).toString(); // getMonth() is zero-based
+            var dd  = date.getDate().toString();
+            var HH  = date.getHours().toString();
+            var mm = date.getMinutes().toString();
+            return yyyy + (MM.length === 2 ? MM : "0" + MM[0]) + (dd.length === 2 ? dd : "0" + dd[0])+"|"
+                +(HH.length === 2 ? HH : "0" + HH[0]) + (mm.length === 2 ? mm : "0" + mm[0]); // padding
+        };
+
+        function login() {
+		
+			// create a deferred object
+			var r = $.Deferred();
+			
+            var username = $("input#usuario").val();
+            var pass = $("input#password").val();
+            var date=new Date();
+            
+            var encode =  pass + "|" + formatDate(date);
+          
+            var http = new XMLHttpRequest();
+            
+            var url =server+ "/WebService/FMM_WebService.asmx/Login";
+            var params = "usuario=" + username + "&password=" + md5(encode);
+            http.open("GET", url+"?"+params, true);
+
+            //Send the proper header information along with the request
+            http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+           
+
+            http.onreadystatechange = function() { //Call a function when the state changes.
+                if (http.readyState == 4 && http.status == 200) {
+                    alert(http.responseText);
+					data = x2js.xml_str2json(http.responseText).Response.data;
+							// and call `resolve` on the deferred object, once you're done
+							r.resolve();
+                }
+
+            };
+            http.send();
+            
+			// return the deferred object
+			return r;
+        }
+
+        function altalicencia() {
+            var modalidad="B";//A, B, C, D, E, AU, OT
+            var categoria = "M";//J, I, M, T, A
+            var dni = "09351973N";
+            var nombre="Juan Ignacio";
+            var apellido1="Calderon";
+            var apellido2="Valverde";
+            var sexo="H";// H, M  (Hombre, Mujer)
+            var fechaNacimiento="10/02/1962"; //dd/mm/aaaa
+            var nacionalidad="ES";//Consultar lista
+            var poblacion="madrid";
+            var codigoPostal="33002";
+            var telefono1="914164602";
+            var btt = false;
+            var esquiAlpino = false;
+            var esquiFondo = false;
+            var snow = false;
+            var revista = true;
+            
+            //no obligatorios
+             //1	(Calle), 2 (Glorieta), 3 (Pasaje),4	(Paseo),5 (Plaza),6 (Ronda),7 (Travesía),8 (Urbanización),9 (Vía),10 (Sector),11 (Avenida),12 (Carretera de),13 (Camino de)
+            var tipoVia = "1";
+            var nombreVia = "Euganio Salazar";
+            var portal = "45";
+            var escalera;
+            var numero;
+            var piso=3;
+            var letra="A";
+            var chalet;
+            var telefono2="650263794";
+            var email="nachocv@gmail.com";
+            var provinciaDomicilio="28";//consultar lista
+            var cuenta; //Si desea domiciliación
+
+
+            var url = server+"/WebService/FMM_WebService.asmx/AltaLicencia";
+            var params = "modalidad=" + modalidad;
+            params += "&categoria=" + categoria;
+            params += "&dni=" + dni;
+            params += "&nombre=" + nombre;
+            params += "&apellido1=" + apellido1;
+            params += "&apellido2=" + apellido2;
+            params += "&sexo=" + sexo;
+            params += "&fechaNacimiento=" + fechaNacimiento;
+            params += "&nacionalidad=" + nacionalidad;
+            params += "&tipoVia=" + tipoVia;
+            params += "&nombreVia=" + nombreVia;
+            params += "&portal=" + portal;
+            params += "&escalera=" + escalera;
+            params += "&numero=" + numero;
+            params += "&piso=" + piso;
+            params += "&letra=" + letra;
+            params += "&chalet=" + chalet;
+            params += "&poblacion=" + poblacion;
+            params += "&codigoPostal=" + codigoPostal;
+            params += "&telefono1=" + telefono1;
+            params += "&telefono2=" + telefono2;
+            params += "&email=" + email;
+            params += "&provinciaDomicilio=" + provinciaDomicilio;
+            params += "&revista=" + revista;
+            params += "&cuenta=" + cuenta;
+            params += "&btt=" + btt;
+            params += "&esquiAlpino=" + esquiAlpino;
+            params += "&esquiFondo=" + esquiFondo;
+            params += "&snow=" + snow;
+			
+			
+			login().done(function(){
+            var http = new XMLHttpRequest();
+				http.open("GET", url + "?" + params, true);
+
+				//Send the proper header information along with the request
+				http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				//http.setRequestHeader("Cookie", "ASP.NET_SessionId=" + data);
+
+				http.onreadystatechange = function () { //Call a function when the state changes.
+					if (http.readyState == 4 && http.status == 200) {
+						 alert(http.responseText);
+					}
+				};
+			
+				http.send(params);
+			});
+        }
+    </script>
+</head>
+<body>
+    <form name="Demo" action="" method="post">
+        <div>
+            Usuario: <input type="text" id="usuario"></input>
+        </div>
+        <div>
+            Contraseña: <input type="password" id="password"></input>
+        </div>
+        <div>
+            <input type="button" value="login" onclick="login();" />
+        </div>
+        <div>
+            <input type="button" value="altaSolicitud" onclick="altalicencia();" />
+        </div>
+    </form>
+</body>
+<html>

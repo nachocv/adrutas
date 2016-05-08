@@ -1,0 +1,157 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@page import="adrutas.com.dao.Perfil"%>
+<%@page import="java.util.Map"%>
+<%@page import="java.util.Map.Entry"%>
+<%@page import="java.util.Vector"%>
+<%@ page import="adrutas.com.dao.Persona" %>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="stylesheets/main.css" type="text/css">
+</head>
+
+<body>
+	<div id="contenedor">
+		<div id="header"></div>
+
+		<table class="tabla_contenedor art-article">
+			<tr>
+				<td class="td_contenedor" valign="top">
+<%@ include file="/2014/bienvenida.jsp"%>
+        </td>
+        <td valign="top">
+          <div class="caja_l">
+            <h3>DATOS USUARIO</h3>
+            <article>
+              Próximamente algunos contenidos serán accesible solo para socios de la Agrupación Deportiva Rutas.
+              Si eres sócio y quieres, puedes darte de alta en este página para poder acceder a dichos contenidos;
+              posteriormente te asignaremos, si procede, el perfil de Socio.
+              <br/>&ensp;
+              <form action="/graba_usuario" method="post">
+                <input type="hidden" name="origen" value="${usuario.origen}">
+                <table width="100%" border="0" cellpadding="2" cellspacing="2">
+                  <tbody>
+	                  <tr>
+                      <td valign="top">
+                        Usuario
+                        <br/><input type="text" name="usuario" value="${usuario.usuario}"/>
+                        <s:if test="#usuario.error.containsKey(\"usuario\")">
+                        <div class="PnlError">
+                          <img src="/images/alerta.gif" style="border-width:0px;">${usuario.error["usuario"]}
+                        </div>
+                        </s:if>
+                      </td>
+                      <td valign="top">
+                        DNI/NIE<br/>
+                        <s:select list="#tiposIdentificacion" name="tipoIdentificacion" value="${usuario.tipoIdentificacion}" label="value" key="key"/>
+                        <input name="dni" class="input_100" value="${usuario.dni}"/>
+                        <s:if test="#usuario.error.containsKey(\"dni\")">
+                        <div class="PnlError">
+                          <img src="/images/alerta.gif" style="border-width:0px;">${usuario.error["dni"]}
+                        </div>
+                        </s:if>
+                      </td>
+                      <td valign="top">
+                        Perfil<br/>
+                        <s:if test="#modificacion==null">
+                          <html:select property="idPerfil" value="${usuario.idPerfil}" disabled="true">
+                            <html:optionsCollection name="usuario" property="perfiles" label="descripcion" value="id"/>
+                          </html:select>
+                        <s:else>
+                          <html:select property="idPerfil" value="${usuario.idPerfil}" disabled="true">
+                            <html:optionsCollection name="usuario" property="perfiles" label="descripcion" value="id"/>
+                          </html:select>
+                        </s:else>
+                        </s:if>
+                      </td>
+	                  </tr>
+                    <tr>
+                      <td valign="top">
+                        Contraseña
+                        <br/><html:password property="password" styleClass="input_150" value="${usuario.password}"/>
+                      </td>
+                      <td valign="top">
+                        Repetir contraseña
+                        <br/><html:password property="password2" styleClass="input_150" value="${usuario.password2}"/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top">
+                        E-mail
+                        <br/><html:text property="email" styleClass="input_150" value="${usuario.email}"/>
+<%
+    if (((Persona) request.getAttribute("usuario")).getError().containsKey("email")) {
+%>
+                        <div class="PnlError">
+                          <img src="/images/alerta.gif" style="border-width:0px;">${usuario.error["email"]}
+                        </div>
+<%
+    }
+%>
+                      </td>
+                      <td valign="top">
+                        Teléfono 1
+                        <br/><html:text property="telefono1" styleClass="input_100" value="${usuario.telefono1}"/>
+<%
+    if (((Persona) request.getAttribute("usuario")).getError().containsKey("telefono1")) {
+%>
+                        <div class="PnlError">
+                          <img src="/images/alerta.gif" style="border-width:0px;">${usuario.error["telefono1"]}
+                        </div>
+<%
+    }
+%>
+                      </td>
+                      <td valign="top">
+                        Teléfono 2
+                        <br/><html:text property="telefono2" styleClass="input_100" value="${usuario.telefono2}"/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top">
+                        Nombre
+                        <br/><html:text property="nombre" styleClass="input_150" value="${usuario.nombre}"/>
+<%
+    if (((Persona) request.getAttribute("usuario")).getError().containsKey("nombre")) {
+%>
+                        <div class="PnlError">
+                          <img src="/images/alerta.gif" style="border-width:0px;">${usuario.error["nombre"]}
+                        </div>
+<%
+    }
+%>
+                      </td>
+                      <td valign="top">
+                        Apellidos
+                        <br/><html:text property="apellidos" styleClass="input_200" value="${usuario.apellidos}"/>
+<%
+    if (((Persona) request.getAttribute("usuario")).getError().containsKey("apellidos")) {
+%>
+                        <div class="PnlError">
+                          <img src="/images/alerta.gif" style="border-width:0px;">${usuario.error["apellidos"]}
+                        </div>
+<%}%>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div align="center"><html:submit value="Registrarse"/></div>
+              </form>
+            </article>
+          </div>
+        </td>
+      </tr>
+		</table>
+
+		<div id="footer">
+			<p>
+				<strong class="Rule6"><a href="mailto:web@adrutas.com">Escribenos</a></strong><br />
+				Copyright &copy; 2013 adRutas---. Todos los Derechos Reservados.
+			</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<!-- connecting to Cloud SQL -->
+			<dataSource type="POOLED">
+				<property name="driver" value="${javax.persistence.jdbc.driver}"/>
+				<property name="url" value="${javax.persistence.jdbc.url}"/>
+			</dataSource>
+		</environment>
+	</environments>
+
+	<mappers>
+	  <mapper resource="adrutas/com/dao/persona.xml"/>
+	  <mapper resource="adrutas/com/dao/salida.xml"/>
+    <mapper resource="adrutas/com/dao/recibo.xml"/>
+    <mapper resource="adrutas/com/dao/ficha.xml"/>
+    <mapper resource="adrutas/com/dao/club.xml"/>
+    <mapper resource="adrutas/com/dao/licencia.xml"/>
+    <mapper resource="adrutas/com/dao/properties.xml"/>
+    <mapper resource="adrutas/com/dao/album.xml"/>
+    <mapper resource="adrutas/com/dao/formapago.xml"/>
+    <mapper resource="adrutas/com/dao/link.xml"/>
+    <mapper resource="adrutas/com/dao/salida_fecha.xml"/>
+    <mapper resource="adrutas/com/dao/bono.xml"/>
+    	</mappers>
+</configuration>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="CompeGPS" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <link href="http://www.compegps.com">
+      <text>CompeGPS TEAM, SL</text>
+    </link>
+    <time>2015-08-08T23:51:55Z</time>
+    <bounds maxlat="47.218659" maxlon="11.988316" minlat="47.180378" minlon="11.900232"/>
+  </metadata>
+  <wpt lat="47.218659" lon="11.900232">
+    <ele>-9999.0</ele>
+    <name>Hainzenberg</name>
+    <desc>Hainzenberg DE</desc>
+    <sym>City (Small)</sym>
+    <time>2015-08-08T23:16:47Z</time>
+  </wpt>
+  <wpt lat="47.209239" lon="11.988316">
+    <ele>-9999.0</ele>
+    <name>Opferstock</name>
+    <desc>Opferstock DE</desc>
+    <sym>City (Small)</sym>
+    <time>2015-08-08T23:17:58Z</time>
+  </wpt>
+  <wpt lat="47.180378" lon="11.955957">
+    <ele>-9999.0</ele>
+    <name>Torhelm</name>
+    <desc>Torhelm DE</desc>
+    <sym>Summit</sym>
+    <time>2015-08-08T23:17:29Z</time>
+  </wpt>
+  <wpt lat="47.202351" lon="11.913428">
+    <ele>-9999.0</ele>
+    <name>Gasthof Gerlosstein</name>
+    <desc>Gasthof Gerlosstein DE</desc>
+    <sym>Restaurant</sym>
+    <time>2015-08-08T23:16:54Z</time>
+  </wpt>
+</gpx>

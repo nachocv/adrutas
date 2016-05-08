@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="CompeGPS" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <link href="http://www.compegps.com">
+      <text>CompeGPS TEAM, SL</text>
+    </link>
+    <time>2015-08-09T00:28:57Z</time>
+    <bounds maxlat="47.110641" maxlon="11.322677" minlat="47.077940" minlon="11.284976"/>
+  </metadata>
+  <wpt lat="47.110641" lon="11.307571">
+    <ele>-9999.0</ele>
+    <name>Neustift Im Stubaital1</name>
+    <desc>Neustift Im Stubaital DE</desc>
+    <sym>City (Medium)</sym>
+    <time>2015-08-09T00:15:00Z</time>
+  </wpt>
+  <wpt lat="47.077940" lon="11.284976">
+    <ele>-9999.0</ele>
+    <name>Klamperbergalm</name>
+    <desc>Klamperbergalm DE</desc>
+    <sym>Restaurant</sym>
+    <time>2015-08-09T00:19:34Z</time>
+  </wpt>
+  <wpt lat="47.093260" lon="11.300576">
+    <ele>-9999.0</ele>
+    <name>AUTENALM</name>
+    <desc>AUTENALM DE</desc>
+    <sym>Navaid-Violet</sym>
+    <time>2015-08-09T00:19:05Z</time>
+  </wpt>
+  <wpt lat="47.079012" lon="11.306541">
+    <ele>-9999.0</ele>
+    <name>Zwölfernieder (2335m)</name>
+    <desc>Zwölfernieder (2335m) DE</desc>
+    <sym>Waypoint</sym>
+    <time>2015-08-09T00:17:41Z</time>
+  </wpt>
+  <wpt lat="47.095063" lon="11.319501">
+    <ele>-9999.0</ele>
+    <name>Elferhütte</name>
+    <desc>Elferhütte DE</desc>
+    <sym>Restaurant</sym>
+    <time>2015-08-09T00:16:00Z</time>
+  </wpt>
+  <wpt lat="47.098560" lon="11.322677">
+    <ele>-9999.0</ele>
+    <name>Bergrestaurant Agrar</name>
+    <desc>Bergrestaurant Agrar DE</desc>
+    <sym>Restaurant</sym>
+    <time>2015-08-09T00:15:07Z</time>
+  </wpt>
+</gpx>

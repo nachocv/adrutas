@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="MapSource 6.16.3" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+  <metadata>
+    <link href="http://www.garmin.com">
+      <text>Garmin International</text>
+    </link>
+    <time>2015-08-08T23:51:09Z</time>
+    <bounds maxlat="47.501943111419678" maxlon="11.752216815948486" minlat="47.426326274871826" minlon="11.707305908203125"/>
+  </metadata>
+
+  <rte>
+    <name>Maurach a Fischerwirt Am See</name>
+    <extensions>
+      <gpxx:RouteExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:IsAutoNamed>true</gpxx:IsAutoNamed>
+        <gpxx:DisplayColor>Magenta</gpxx:DisplayColor>
+      </gpxx:RouteExtension>
+    </extensions>
+    <rtept lat="47.426326274871826" lon="11.752216815948486">
+      <time>2015-08-08T23:44:37Z</time>
+      <name>Maurach</name>
+      <cmt>Maurach
+DE</cmt>
+      <desc>Maurach
+DE</desc>
+      <sym>City (Small)</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>0B00000000000100EF08FFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="47.448556423187256" lon="11.751530170440674">
+      <time>2015-08-08T23:44:52Z</time>
+      <name>Dalfazer Rosskopf</name>
+      <cmt>Dalfazer Rosskopf
+DE</cmt>
+      <desc>Dalfazer Rosskopf
+DE</desc>
+      <sym>Summit</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>66B0000000001800EF08FFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="47.457504272460938" lon="11.749320030212402">
+      <time>2015-08-08T23:45:34Z</time>
+      <name>Steinernes Tor (1955m)</name>
+      <cmt>Steinernes Tor (1955m)
+DE</cmt>
+      <desc>Steinernes Tor (1955m)
+DE</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>6658000000001700E608FFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="47.465486526489258" lon="11.75187349319458">
+      <time>2015-08-08T23:46:49Z</time>
+      <name>Kotalmjoch</name>
+      <cmt>Kotalmjoch
+DE</cmt>
+      <desc>Kotalmjoch
+DE</desc>
+      <sym>Summit</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>66B0000000001900EF08FFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="47.495119571685791" lon="11.731488704681396">
+      <time>2015-08-08T23:47:56Z</time>
+      <name>Jausenstation Köglalm</name>
+      <cmt>Jausenstation Köglalm
+DE</cmt>
+      <desc>Jausenstation Köglalm
+DE</desc>
+      <sym>Restaurant</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>2A08000000001900A308FFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="47.501943111419678" lon="11.707305908203125">
+      <time>2015-08-08T23:50:20Z</time>
+      <name>Fischerwirt Am See</name>
+      <cmt>Fischerwirt Am See
+DE</cmt>
+      <desc>Fischerwirt Am See
+DE</desc>
+      <sym>Restaurant</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>2A08000000001100C008FFFFFFFFFFFFFFFF</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+  </rte>
+
+</gpx>

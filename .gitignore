@@ -3,3 +3,4 @@
 .project
 # ignora los archivos compilados
 war/WEB-INF/classes/
+/bin/

@@ -20,6 +20,7 @@
           <a href='/2016/0521/programa.png' target='_new'><img src="/2016/0521/programa_s.png" class="right"/></a>
           <font color="blue">Ruta: </font>Pto. de Tornavacas-Collado Herido-Portilla Jaranda-Guijo de Santa Bárbara
           <br/><br/><font color="blue">Alternativa: </font>Pto. de Tornavacas-Collado Herido-Garganta de San Martín-Tornavacas
+          <br/><br/><a href="/2016/0521/tracks.zip">Estos tracks</a> son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club. <a href="/2016/0521/160521_a.gpx" target='_new'>Track A.</a> <a href="/2016/0521/160521_b.gpx" target='_new'>Track B.</a>
         </td>
       </tr>
       <tr>

@@ -48,6 +48,7 @@ public class Marchas extends HttpServlet {
     };
 
     public static void inicio() {
+    	log.log(Level.SEVERE, "Iniciando Marchas");
         List<Map<String, Object>> lAlbum;
         Set<String> sAlbum = new HashSet<String>();
         int anio;
@@ -59,6 +60,8 @@ public class Marchas extends HttpServlet {
         Map<String, Map<String, Object>> mSalida = new HashMap<String, Map<String, Object>>();
         try {
             for (Map<String, Object> beanA: lAlbum = Album.get()) {
+            	log.log(Level.SEVERE, "Salida: " + beanA.get("salida") + ". Persona: " + beanA.get("id_persona") + ". Cont: " 
+            			+ beanA.get("cont") + ". Url: " + beanA.get("url") + ". Nombre: " + beanA.get("nombre"));
                 sAlbum.add((String) beanA.get("salida"));
             }
             for (Map<String, Object> beanS: Salida.get()) {
@@ -90,6 +93,7 @@ public class Marchas extends HttpServlet {
         } catch (Exception e) {
             log.log(Level.SEVERE, "No lee albumes.xml", e);
         }
+    	log.log(Level.SEVERE, "Finalizando Marchas");
     }
 
     public static SortedMap<Integer, SortedMap<Date, Map<String, Object>>> getMalbum() {

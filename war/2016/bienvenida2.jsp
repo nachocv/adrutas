@@ -56,10 +56,10 @@
     <h3>SEGURO INTERMUNDIAL</h3>
     <article>
       <a href="/2016/seguros/intermundial/precios.pdf" target="_new">Precios</a>
-      <br/><a href="/2016/seguros/intermundial/resumen_sin_anulacion.pdf" target="_new">Resumen condiciones seguro sin anulación</a>
-      <br/><a href="/2016/seguros/intermundial/resumen_con_anulacion.pdf" target="_new">Resumen condiciones seguro con anulación</a>
-      <br/><a href="/2016/seguros/intermundial/condiciones_sin_anulacion.pdf" target="_new">Condiciones seguro sin anulación</a>
-      <br/><a href="/2016/seguros/intermundial/condiciones_con_anulacion.pdf" target="_new">Condiciones seguro con anulación</a>
+      <br/><a href="https://drive.google.com/open?id=0B2iumJTkYXrORmNHRUFrd0pKcnlxOWVvZHRiRV9zbEEzNE5N" target="_new">Resumen condiciones seguro sin anulación</a>
+      <br/><a href="https://drive.google.com/open?id=0B2iumJTkYXrOTG1OWGFrdWltSTR2OXh0Wll6TXNmTkZ1ekdN" target="_new">Resumen condiciones seguro con anulación</a>
+      <br/><a href="https://drive.google.com/open?id=0B2iumJTkYXrOVEd4aEt3UzdMNUlUTERSOGh0NVViU2R2Nmkw" target="_new">Condiciones seguro sin anulación</a>
+      <br/><a href="https://drive.google.com/open?id=0B2iumJTkYXrOaE92VUNrQlJjRW9XZThmMGpwaG1wZF9UekFr" target="_new">Condiciones seguro con anulación</a>
       <br/><br/><a href="javascript:void(0)" onclick="ocultaFrame()">Cerrar</a>
     </article>
   </div>

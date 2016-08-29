@@ -8,13 +8,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.commons.httpclient.HttpClient;
+import org.apache.commons.httpclient.HttpException;
 import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.methods.GetMethod;
-import org.apache.commons.httpclient.methods.PostMethod;
 
 public class PostReqEx {
   private static DateFormat dF = new SimpleDateFormat("yyyyMMdd|HHmm");
   private static MessageDigest digester;
+  private static HttpClient httpClient = new HttpClient();
 
   static {
     try {
@@ -24,6 +25,7 @@ public class PostReqEx {
       e.printStackTrace();
     }
   }
+
   public static String crypt(String str) {
     if (str == null || str.length() == 0) {
       throw new IllegalArgumentException("String to encript cannot be null or zero length");
@@ -42,29 +44,19 @@ public class PostReqEx {
     return hexString.toString();
   }
 
-  public void login(String url,String username,String pass) throws IOException{
-    url = "https://www.fmmlicencias.com/WebService/FMM_WebService.asmx/Login";
-    username = "tu usuario";
-    pass = "tu contraseña";
-
-    HttpClient httpClient = new HttpClient();
-    Date date=new Date();
-    String encode =  pass + "|" + formatDate(date);
-    String params = "usuario=" + username + "&password=" + crypt(encode);
-    GetMethod getMethod = new GetMethod(url+"?"+params);
+  public static void login(String url,String username,String pass) throws IOException{
+    String params = "usuario=" + username + "&password=" + crypt(pass + "|" + dF.format(new Date()));
+    GetMethod getMethod = new GetMethod(url + "Login?" + params);
     httpClient.executeMethod(getMethod);
     if (getMethod.getStatusCode() == HttpStatus.SC_OK) {
       String resp = getMethod.getResponseBodyAsString();
+      System.out.println(resp);
     } else {
       //...postMethod.getStatusLine();
     }
   }
 
-  private String formatDate(Date date) {
-    return dF.format(date); // padding
-  };
-
-  private void altalicencia() {
+  private static void altalicencia(String url) throws HttpException, IOException {
     String modalidad="A";//A, B, C, D, E, AU, OT
     String categoria = "J";//J, I, M, T, A
     String dni = "00000000T";
@@ -82,25 +74,21 @@ public class PostReqEx {
     boolean esquiFondo = false;
     boolean snow = false;
     boolean revista = true;
+    String tipoVia = "1";
+    String nombreVia = "Eugenio Salazar".replaceAll("\\s", "&nbsp;");
+    String email = "nachocv@gmail.com";
 
     //no obligatorios
     //1	(Calle), 2 (Glorieta), 3 (Pasaje),4	(Paseo),5 (Plaza),6 (Ronda),7 (Travesía),8 (Urbanización),9 (Vía),10 (Sector),11 (Avenida),12 (Carretera de),13 (Camino de)
-    String tipoVia ;
-    String nombreVia;
-    String portal;
-    String escalera;
-    String numero;
-    String piso;
-    String letra;
-    String chalet;
-    String telefono2;
-    String email;
-    String provinciaDomicilio;//consultar lista
-    String cuenta; //Si desea domiciliación
-
-    String http = new XMLHttpRequest();
-
-    String url = "https://www.fmmlicencias.com/WebService/FMM_WebService.asmx/AltaLicencia";
+    String portal = "";
+    String escalera = "";
+    String numero = "";
+    String piso = "";
+    String letra = "";
+    String chalet = "";
+    String telefono2 = "";
+    String provinciaDomicilio = "";//consultar lista
+    String cuenta = ""; //Si desea domiciliación
     String params = "modalidad=" + modalidad;
     params += "&categoria=" + categoria;
     params += "&dni=" + dni;
@@ -130,19 +118,19 @@ public class PostReqEx {
     params += "&esquiAlpino=" + esquiAlpino;
     params += "&esquiFondo=" + esquiFondo;
     params += "&snow=" + snow;
-    http.open("GET", url + "?" + params, true);
-
-    //Send the proper header information along with the request
-    //   http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-
-    http.onreadystatechange = function () { //Call a function when the state changes.
-      if (http.readyState == 4 && http.status == 200) {
-	// alert(http.responseText);
-      }
-    };
-    http.send(params);
-
+    GetMethod getMethod = new GetMethod(url + "AltaLicencia?" + params);
+    httpClient.executeMethod(getMethod);
+    if (getMethod.getStatusCode() == HttpStatus.SC_OK) {
+      String resp = getMethod.getResponseBodyAsString();
+      System.out.println(resp);
+    } else {
+      //...postMethod.getStatusLine();
+    }
   }
-}
+
+  public static void main(String[] args) throws IOException {
+    String url = "https://www.fmmlicencias.com/WebService/FMM_WebService.asmx/";
+    login(url,"arutas","jujo088montegu");
+    altalicencia(url);
+  }
 }

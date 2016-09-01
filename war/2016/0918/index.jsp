@@ -19,6 +19,7 @@
             <tr class="top">
               <td>
 <%@ include file="/2016/0925/aviso1.jsp"%>
+<%@ include file="/2016/1204/aviso1.jsp"%>
 <%@ include file="/2016/apunte.jsp"%>
 <%@ include file="/2016/bienvenida.jsp"%>
 <%@ include file="/2015/aviso10.jsp"%>
@@ -29,6 +30,7 @@
 <%@ include file="/2016/ventajas_socio.jsp"%>
               </td>
               <td>
+<%@ include file="/2016/aviso3.jsp"%>
 <%@ include file="/2016/05/aviso2.jsp"%>
 <%@ include file="/2016/seguros/fmm/federacion.jsp"%>
 <%@ include file="/2014/aviso.jsp"%>

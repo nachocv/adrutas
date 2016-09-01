@@ -13,7 +13,7 @@
         <td valign="middle">
           <a href="/2016/0925/programa.png" target="_new"><img src="/2016/0925/programa_s.png"/></a>
         </td>
-        <td>RÍO SORBE<td>
+        <td>PIEDRALAVES<td>
         </td>
       </tr>
       <tr>

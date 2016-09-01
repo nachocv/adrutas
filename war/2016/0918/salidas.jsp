@@ -28,11 +28,11 @@
         </td>
       </tr>
       <tr>
-        <td height="81">DICIEMBRE<br/>3 al 6</td>
+        <td height="81">DICIEMBRE<br/>4 al 11</td>
         <td>
-          <a href="/2016/1203/programa.png" target="_new"><img src="/2016/1203/programa_s.png"/></a>
+          <a href="/2016/1204/programa.png" target="_new"><img src="/2016/1204/programa_s.png"/></a>
         </td>
-        <td>Sierras de Málaga</td>
+        <td>Tenerife</td>
         <td>
         </td>
       </tr>

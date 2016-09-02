@@ -2,6 +2,6 @@
 <div class="caja_s">
   <h3>Cambio de Programa</h3>
   <article>
-    Debido a que los caminos son impracticables, se sustituye la salida ordinaria al Río Sorbe del día 25 de septiembre por la de <b>Piedralavés</b> que se suspendió el 26 de junio con motivo de las elecciones generales
+    Debido a que los caminos son intransitables, se sustituye la salida ordinaria al Río Sorbe del día 25 de septiembre por la de <b>Piedralaves</b> que se suspendió el 26 de junio con motivo de las elecciones generales
   </article>
 </div>

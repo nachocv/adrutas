@@ -24,7 +24,7 @@
       <tr>
         <td height="81">OCTUBRE<br/>8 y 9</td>
         <td>
-          <a href="/2016/1008/programa.png" target="_new"><img src="/2016/1008/programa_s.png"/></a>
+          <a href="/2016/1007/programa.png" target="_new"><img src="/2016/1007/programa_s.png"/></a>
         </td>
         <td>Sierra de Cameros-La Rioja</td>
         <td>
@@ -33,7 +33,7 @@
       <tr>
         <td height="81">29 OCT<br/>-1 NOV</td>
         <td>
-          <a href="/2016/1029/programa.png" target="_new"><img src="/2016/1029/programa_s.png"/></a>
+          <a href="/2016/1028/programa.png" target="_new"><img src="/2016/1028/programa_s.png"/></a>
         </td>
         <td>Hayedos de Cantabria</td>
         <td>

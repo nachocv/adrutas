@@ -20,6 +20,7 @@
           <a href='/2016/0918/programa.png' target='_new'><img src="/2016/0918/programa_s.png" class="right"/></a>
           <font color="blue">Ruta: </font>Canales del Ducado-Río Ablanquejo-Las Salinas-Pico Alar-Ocentejo
           <br/><br/><font color="blue">Alternativa: </font>Canales del Ducado-Río Ablanquejo-Las Salinas-Ocentejo
+          <br/><br/><a href="/2016/0918/tracks.zip">Estos tracks</a> son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club. <a href="/2016/0918/160918_a.gpx" target='_new'>Track A.</a> <a href="/2016/0918/160918_b.gpx" target='_new'>Track B.</a>
         </td>
       </tr>
       <tr>

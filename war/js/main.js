@@ -459,7 +459,7 @@ function calcula_importe() {
 					hace41anyos.setFullYear(hace41anyos.getFullYear()-41);
 					mayor41 = nacimiento<hace41anyos;
 				}
-				importecuota = mayor41? 15: 5;
+				importecuota = mayor41? 5: 5;
 			}
 			if ($("input#licencia").prop('checked')) {
 				var mayor18 = true;

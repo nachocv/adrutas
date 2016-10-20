@@ -137,9 +137,9 @@
 
   <select id="getSalidaRecibos" parameterType="java.lang.Integer" resultType="java.util.HashMap">
     SELECT a.bus,a.asiento,a.id_persona,a.id_recibo,fecha,a.importe imp_auto,b.importe,
-           seguro_dia,bono,estado,ingreso,pago,observacion,dni,nombre,apellido1,apellido2
-      FROM salida_detalle a, recibos b, persona c
-     where a.id_recibo=b.id_recibo and a.id_persona=c.id_persona and salida=#{salida}
+           seguro_dia,concat(d.bono,'-',d.uso) bono,estado,ingreso,pago,observacion,dni,nombre,apellido1,apellido2
+      FROM salida_detalle a LEFT JOIN bono_detalle d ON (a.salida=d.salida and a.id_persona=d.id_persona), recibos b, persona c
+     where a.id_recibo=b.id_recibo and a.id_persona=c.id_persona and a.salida=#{salida}
   order by bus,asiento,id_recibo
   </select>
 

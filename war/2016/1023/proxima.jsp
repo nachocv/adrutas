@@ -20,6 +20,7 @@
           <a href='/2016/1023/programa.png' target='_new'><img src="/2016/1023/programa_s.png" class="right"/></a>
           <font color="blue">Ruta: </font>Becerril de la Sierra-Río Lillas-Pico Buitrera-Riofrío de Riaza
           <br/><br/><font color="blue">Alternativa: </font>Becerril de la Sierra-Ermita de Hontanares-Riofrío de Riaza
+          <br/><br/><a href="/2016/1023/tracks.zip">Estos tracks</a> son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club. <a href="/2016/1023/161023_a.gpx" target='_new'>Track A.</a> <a href="/2016/1023/161023_b.gpx" target='_new'>Track B.</a>
         </td>
       </tr>
       <tr>
@@ -33,6 +34,11 @@
               <a href="#" onclick="apunte()">Apúntate aquí</a>
             </form>
           <%}%>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan='2'>
+          <a href="/2016/1023/mapa.pdf" target="_new">Mapa</a>
         </td>
       </tr>
     </table>

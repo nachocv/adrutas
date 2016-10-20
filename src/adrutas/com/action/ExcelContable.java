@@ -99,7 +99,7 @@ public class ExcelContable extends ActionSupport {
             row.createCell(col++).setCellValue(((BigDecimal) bean.get("imp_auto")).doubleValue());
             row.createCell(col++).setCellValue((object = bean.get("seguro_dia"))==null? false: (boolean) object);
             if ((object = bean.get("bono"))!=null) {
-                row.createCell(col).setCellValue((Integer) object);
+                row.createCell(col).setCellValue((String) object);
             }
             col++;
             row.createCell(col++).setCellValue((String) bean.get("estado"));

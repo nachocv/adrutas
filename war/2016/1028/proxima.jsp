@@ -14,22 +14,22 @@
       </tr>
       <tr>
         <td colspan='2'>
-          <br/><br/><a href="https://drive.google.com/open?id=0B2iumJTkYXrOV1Y2SzRfOGpDaUU" target='_new'>Estos tracks</a> son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club.
+          <br/><br/><a href="/2016/1028/tracks.zip" target='_new'>Estos tracks</a> son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club.
           <ul>
-            <li><a href="https://drive.google.com/open?id=0B2iumJTkYXrOUTNzTXFLR1NlNzg" target='_new'>Día 29 A</a></li>
-            <li><a href="https://drive.google.com/open?id=0B2iumJTkYXrOMnE4WW9qZl9yNUk" target='_new'>Día 29 B</a></li>
-            <li><a href="https://drive.google.com/open?id=0B2iumJTkYXrOaG1QYkxDNjM1azA" target='_new'>Día 30 A</a></li>
-            <li><a href="https://drive.google.com/open?id=0B2iumJTkYXrOWlNBTEw3MHJKZTQ" target='_new'>Día 30 B</a></li>
-            <li><a href="https://drive.google.com/open?id=0B2iumJTkYXrOTmVhRGl4NnFHYXc" target='_new'>Día 31 A</a></li>
-            <li><a href="https://drive.google.com/open?id=0B2iumJTkYXrOVlJ0aUpzZDFZZFU" target='_new'>Día 31 B</a></li>
-            <li><a href="https://drive.google.com/open?id=0B2iumJTkYXrOYnlLdzcwRkUtVmM" target='_new'>Día 1 A</a></li>
-            <li><a href="https://drive.google.com/open?id=0B2iumJTkYXrOeUZGakZDVHV0RzQ" target='_new'>Día 1 B</a></li>
+            <li><a href="/2016/1028/29_a.gpx" target='_new'>Día 29 A</a></li>
+            <li><a href="/2016/1028/29_b.gpx" target='_new'>Día 29 B</a></li>
+            <li><a href="/2016/1028/30_a.gpx" target='_new'>Día 30 A</a></li>
+            <li><a href="/2016/1028/30_b.gpx" target='_new'>Día 30 B</a></li>
+            <li><a href="/2016/1028/31_a.gpx" target='_new'>Día 31 A</a></li>
+            <li><a href="/2016/1028/31_b.gpx" target='_new'>Día 31 B</a></li>
+            <li><a href="/2016/1028/01_a.gpx" target='_new'>Día 1 A</a></li>
+            <li><a href="/2016/1028/01_b.gpx" target='_new'>Día 1 B</a></li>
           </ul>
         </td>
       </tr>
       <tr>
         <td align="center" colspan='2'>
-          <a href="https://drive.google.com/open?id=0B2iumJTkYXrObG9DbnRBZ2s4MGs" target="_new">Programa</a>
+          <a href="/2016/1028/programa.pdf" target="_new">Programa</a>
         </td>
       </tr>
     </table>

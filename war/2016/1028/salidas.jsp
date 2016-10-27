@@ -10,16 +10,6 @@
         <td width="115">NOTAS</td>
       </tr>
       <tr>
-        <td height="81">29 OCT<br/>-1 NOV</td>
-        <td>
-          <a href="/2016/1028/programa.png" target="_new"><img src="/2016/1028/programa_s.png"/></a>
-        </td>
-        <td>Hayedos de Cantabria</td>
-        <td>
-          <a href="https://drive.google.com/open?id=0B2iumJTkYXrObG9DbnRBZ2s4MGs" target="_new">Programa</a>
-        </td>
-      </tr>
-      <tr>
         <td height="81">DICIEMBRE<br/>4 al 11</td>
         <td>
           <a href="/2016/1204/programa.png" target="_new"><img src="/2016/1204/programa_s.png"/></a>

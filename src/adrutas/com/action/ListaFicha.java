@@ -71,8 +71,8 @@ public class ListaFicha extends ActionSupport {
             context.put("D_adl", Licencia.getMlicencias().get("D").get("importe"));
             context.put("E_men", Licencia.getMlicencias().get("E").get("importe_menor"));
             context.put("E_adl", Licencia.getMlicencias().get("E").get("importe"));
-            context.put("OT_men", Licencia.getMlicencias().get("OT").get("importe_menor"));
-            context.put("OT_adl", Licencia.getMlicencias().get("OT").get("importe"));
+            context.put("OT1_men", Licencia.getMlicencias().get("OT1").get("importe_menor"));
+            context.put("OT1_adl", Licencia.getMlicencias().get("OT1").get("importe"));
             context.put("INT_CR_CA", Licencia.getMlicencias().get("INT CR CA").get("importe"));
             context.put("INT_CR_SA", Licencia.getMlicencias().get("INT CR SA").get("importe"));
             context.put("INT_SR_CA", Licencia.getMlicencias().get("INT SR CA").get("importe"));

@@ -30,6 +30,7 @@
       <tr>
         <td align="center" colspan='2'>
           <a href="/2016/1028/programa.pdf" target="_new">Programa</a>
+          <br/><a href="https://drive.google.com/open?id=0B2iumJTkYXrOTThhejhIcVRieWM" target="_new">Mapa</a>
         </td>
       </tr>
     </table>

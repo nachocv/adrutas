@@ -17,9 +17,10 @@
     <table style="width: 100%;">
       <tr>
         <td colspan="2">
-          <a href='/2016/1023/programa.png' target='_new'><img src="/2016/1023/programa_s.png" class="right"/></a>
+          <a href='/2016/1113/programa.png' target='_new'><img src="/2016/1113/programa_s.png" class="right"/></a>
           <font color="blue">Ruta: </font>Horcajo de la Sierra-Cebollera Nueva-Collado del Mosquito-Montejo de la Sierra
           <br/><br/><font color="blue">Alternativa: </font>Horcajo de la Sierra-Collado del Mosquito-Montejo de la Sierra
+          <br/><br/><a href="/2016/1113/tracks.zip">Estos tracks</a> son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club. <a href="/2016/1113/161113_a.gpx" target='_new'>Track A.</a> <a href="/2016/1113/161113_b.gpx" target='_new'>Track B.</a> <a href="/2016/1113/161113_c.gpx" target='_new'>Track C.</a>
         </td>
       </tr>
       <tr>
@@ -33,6 +34,11 @@
               <a href="#" onclick="apunte()">Apúntate aquí</a>
             </form>
           <%}%>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan='2'>
+          <a href="/2016/1113/mapa.pdf" target="_new">Mapa</a>
         </td>
       </tr>
     </table>

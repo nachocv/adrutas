@@ -35,7 +35,7 @@
 <%@ include file="/2016/05/aviso2.jsp"%>
 <%@ include file="/2016/seguros/fmm/federacion.jsp"%>
 <%@ include file="/2014/aviso.jsp"%>
-<%@ include file="/2016/noticias1.jsp"%>
+<%@ include file="/2016/noticias2.jsp"%>
               </td>
             </tr>
           </table>

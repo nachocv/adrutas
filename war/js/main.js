@@ -441,7 +441,7 @@ function calcula_importe() {
 				});
 			}
 		}
-	} else if (anyoInt=2016) {
+	} else if (anyoInt==2016) {
 		var importecuota = 0;
 		var importelicencia = 0;
 		if ($("input#essocio").prop('checked')) {
@@ -451,6 +451,40 @@ function calcula_importe() {
 				nacimiento = new Date(numbers[0],numbers[1]-1,numbers[2]);
 			}
 			if (anyos[2015]!==undefined && anyos[2015].fichas[0].essocio) {
+				importecuota = 5;
+			} else {
+				var mayor41 = true;
+				if (nacimiento!="") {
+					var hace41anyos = new Date();
+					hace41anyos.setFullYear(hace41anyos.getFullYear()-41);
+					mayor41 = nacimiento<hace41anyos;
+				}
+				importecuota = mayor41? 5: 5;
+			}
+			if ($("input#licencia").prop('checked')) {
+				var mayor18 = true;
+				if (nacimiento!="") {
+					var hace18anyos = new Date();
+					hace18anyos.setFullYear(hace18anyos.getFullYear()-18);
+					mayor18 = nacimiento<hace18anyos;
+				}
+				var licencia = anyos[anyoInt].licencias[$("select#tipo_licencia").val()];
+				importelicencia += (mayor18 || licencia.importe_menor===null)? licencia.importe: licencia.importe_menor;
+				$("#opciones input:checked").each(function(key, value) {
+					importelicencia += licencia.opciones[value.id.substring(7)].importe;
+				});
+			}
+		}
+	} else if (anyoInt==2017) {
+		var importecuota = 0;
+		var importelicencia = 0;
+		if ($("input#essocio").prop('checked')) {
+			var nacimiento = $("input#nacimiento").val();
+			if (nacimiento!="") {
+				var numbers = nacimiento.split("-");
+				nacimiento = new Date(numbers[0],numbers[1]-1,numbers[2]);
+			}
+			if (anyos[2016]!==undefined && anyos[2016].fichas[0].essocio) {
 				importecuota = 5;
 			} else {
 				var mayor41 = true;

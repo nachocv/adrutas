@@ -3,6 +3,7 @@ package adrutas.com.dao;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -24,6 +25,8 @@ public class Licencia implements Serializable {
     private static String sLicencias;
 
     public static void init() {
+    	Date inicio;
+        Date hoy = new Date();
         SqlSession session = Constante.getSession();
         try {
             Map<String, Object> map = new HashMap<String, Object>();
@@ -36,7 +39,11 @@ public class Licencia implements Serializable {
             JsonObjectBuilder jsonOpciones;
             JsonObjectBuilder jsonOpcion;
             for (Object object: session.selectList("licencia.get")) {
-                if ((anyo = anyos.get(integer = (Integer) (licencia = (Map<String, Object>) object).get("anyo")))==null) {
+            	licencia = (Map<String, Object>) object;
+            	if ((inicio = (Date) licencia.get("inicio"))!=null && inicio.compareTo(hoy)>0) {
+            		continue;
+            	}
+                if ((anyo = anyos.get(integer = (Integer) licencia.get("anyo")))==null) {
                     anyos.put(integer, anyo = new ArrayList<Map<String, Object>>());
                 }
                 anyo.add(licencia);

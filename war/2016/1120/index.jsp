@@ -18,18 +18,20 @@
           <table>
             <tr class="top">
               <td>
-<%@ include file="/2016/aviso4.jsp"%>
+<%@ include file="/2016/11/aviso1.jsp"%>
 <%@ include file="/2016/1204/aviso1.jsp"%>
 <%@ include file="/2016/apunte.jsp"%>
 <%@ include file="/2016/bienvenida.jsp"%>
               </td>
               <td>
 <%@ include file="/2016/1120/proxima.jsp"%>
+<%@ include file="/2016/12/loteria.jsp"%>
 <%@ include file="/2016/aviso3.jsp"%>
 <%@ include file="/2016/aviso1.jsp"%>
 <%@ include file="/2016/ventajas_socio.jsp"%>
               </td>
               <td>
+<%@ include file="/2016/aviso4.jsp"%>
 <%@ include file="/2016/aviso5.jsp"%>
 <%@ include file="/2016/seguros/fmm/federacion.jsp"%>
 <%@ include file="/2014/aviso.jsp"%>

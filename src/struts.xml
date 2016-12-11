@@ -10,6 +10,9 @@
 	   <interceptor name="rolesNacho" class="adrutas.com.interceptor.RolesInterceptor"/>
 	 </interceptors>
 
+    <action name="init" class="adrutas.com.action.Init">
+    </action>
+	 
     <action name="index" class="adrutas.com.action.Index">
       <result name="success">/index.jsp</result>
     </action>

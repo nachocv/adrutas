@@ -71,23 +71,26 @@ public class ListaFicha extends ActionSupport {
             context.put("D_adl", Licencia.getMlicencias().get("D").get("importe"));
             context.put("E_men", Licencia.getMlicencias().get("E").get("importe_menor"));
             context.put("E_adl", Licencia.getMlicencias().get("E").get("importe"));
-            context.put("OT1_men", Licencia.getMlicencias().get("OT1").get("importe_menor"));
-            context.put("OT1_adl", Licencia.getMlicencias().get("OT1").get("importe"));
+//            context.put("OT1_men", Licencia.getMlicencias().get("OT1").get("importe_menor"));
+//            context.put("OT1_adl", Licencia.getMlicencias().get("OT1").get("importe"));
             context.put("INT_CR_CA", Licencia.getMlicencias().get("INT CR CA").get("importe"));
             context.put("INT_CR_SA", Licencia.getMlicencias().get("INT CR SA").get("importe"));
             context.put("INT_SR_CA", Licencia.getMlicencias().get("INT SR CA").get("importe"));
             context.put("INT_SR_SA", Licencia.getMlicencias().get("INT SR SA").get("importe"));
-            for (Map<String, Object> opcion: (List<Map<String, Object>>) Licencia.getMlicencias().get("A").get("opciones")) {
+            for (Map<String, Object> opcion: (List<Map<String, Object>>) Licencia.getMlicencias().get("B").get("opciones")) {
                 if ("BTT".equals(opcion.get("tipo_opcion"))) {
                     context.put("BTT", opcion.get("importe"));
                     context.put("BTTc", '\u2610');
-                } else if ("EA".equals(opcion.get("tipo_opcion"))) {
+                }
+                if ("EA".equals(opcion.get("tipo_opcion"))) {
                     context.put("EA", opcion.get("importe"));
                     context.put("EAc", '\u2610');
-                } else if ("EF".equals(opcion.get("tipo_opcion"))) {
+                }
+                if ("EF".equals(opcion.get("tipo_opcion"))) {
                     context.put("EF", opcion.get("importe"));
                     context.put("EFc", '\u2610');
-                } else if ("SNW".equals(opcion.get("tipo_opcion"))) {
+                }
+                if ("SNW".equals(opcion.get("tipo_opcion"))) {
                     context.put("SNW", opcion.get("importe"));
                     context.put("SNWc", '\u2610');
                 }

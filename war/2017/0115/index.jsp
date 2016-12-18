@@ -23,7 +23,7 @@
 <%@ include file="/2017/bienvenida.jsp"%>
               </td>
               <td>
-<%@ include file="/2016/1218/proxima.jsp"%>
+<%@ include file="/2017/0115/proxima.jsp"%>
 <%@ include file="/2016/12/loteria.jsp"%>
 <%@ include file="/2016/ventajas_socio.jsp"%>
               </td>
@@ -39,8 +39,8 @@
 			</tr>
       <tr>
         <td class="td_contenedor">
-<%@ include file="/2016/1218/excursiones.jsp"%>
-<%@ include file="/2016/1218/salidas.jsp"%>
+<%@ include file="/2017/0115/excursiones.jsp"%>
+<%@ include file="/2017/0115/salidas.jsp"%>
         </td>
       </tr>
 			<tr>

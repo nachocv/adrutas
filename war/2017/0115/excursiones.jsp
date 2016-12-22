@@ -9,11 +9,35 @@
         <td width="110">NOTAS</td>
       </tr>
       <tr>
-        <td>Dom.<br/>18 DIC</td>
+        <td>Dom.<br/>22 ENE</td>
         <td valign="middle">
-          <a href="/2016/1218/programa.png" target="_new"><img src="/2016/1218/programa_s.png"/></a>
+          <a href="/2017/0122/programa.png" target="_new"><img src="/2017/0122/programa_s.png"/></a>
         </td>
-        <td>COMIDA DE NAVIDAD<td>
+        <td>PICO EL LOBO<td>
+        </td>
+      </tr>
+      <tr>
+        <td>Dom.<br/>29 ENE</td>
+        <td valign="middle">
+          <a href="/2017/0129/programa.png" target="_new"><img src="/2017/0129/programa_s.png"/></a>
+        </td>
+        <td>PATONES CANCHO DE LA CABEZA<td>
+        </td>
+      </tr>
+      <tr>
+        <td>Dom.<br/>5 FEB</td>
+        <td valign="middle">
+          <a href="/2017/0205/programa.png" target="_new"><img src="/2017/0205/programa_s.png"/></a>
+        </td>
+        <td>LA PEÑOTA<td>
+        </td>
+      </tr>
+      <tr>
+        <td>Dom.<br/>12 FEB</td>
+        <td valign="middle">
+          <a href="/2017/0212/programa.png" target="_new"><img src="/2017/0212/programa_s.png"/></a>
+        </td>
+        <td>PEÑA HUECA Y CASCADA DEL CANCHO<td>
         </td>
       </tr>
     </table>

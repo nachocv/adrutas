@@ -19,6 +19,7 @@
           <a href='/2017/0115/programa.png' target='_new'><img src="/2017/0115/programa_s.png" class="right"/></a>
           <font color="blue">Ruta: </font>Las Hoyuelas-Cabeza la Huerta-Área Recreativa-Cerro del Yelmo-Mesón del Puerto
           <br/><br/><font color="blue">Alternativa: </font>Las Hoyuelas-Cabeza la Huerta-Cuerda de la Parada-Mesón del Puerto
+          <br/><br/><b><a href="/2017/0115/tracks.zip">Estos tracks</a> <font color="red">son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club</font></b>. <a href="/2017/0115/170115_a.gpx" target='_new'>Track A</a>, <a href="/2017/0115/170115_b.gpx" target='_new'>track B</a>
         </td>
       </tr>
       <tr>
@@ -32,6 +33,11 @@
               <a href="#" onclick="apunte()">Apúntate aquí</a>
             </form>
           <%}%>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan='2'>
+             <a href="/2017/0115/mapa.pdf" target="_new">Mapa</a>
         </td>
       </tr>
     </table>

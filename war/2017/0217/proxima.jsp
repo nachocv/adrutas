@@ -2,25 +2,18 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <div class="caja_m">
   <h3>
-  <%if ((Boolean) request.getAttribute("presentarMensaje")) {%>
-    <%if ((Boolean) request.getAttribute("hayPlazas")) {%>
-      <font color="blue">¡¡QUEDAN PLAZAS LIBRES!!</font>
-    <%} else {%>
-      <font color="blue">¡¡YA NO HAY PLAZAS!!</font>
-    <%}%>
-  <%}%>
-    <br/><font color="red">Para la opción A es obligatorio llevar crampones y piolet</font>
-    <br/>Domingo 22 de enero a las 08:00
-    <br/>Pico el Lobo
+    PRÓXIMA SALIDA: PARQUE NATURAL DEL MONCAYO, del 17 al 19 de Febrero
+    <br/>Salida el 17 de Febrero a las 17:30
+    <br/><font color="red">de Pz. Pintor Sorolla (metro Iglesia)</font>
   </h3>
   <article>
     <table style="width: 100%;">
       <tr>
         <td colspan="2">
-          <a href='/2017/0122/programa.png' target='_new'><img src="/2017/0122/programa_s.png" class="right"/></a>
+          <a href='/2017/0129/programa.png' target='_new'><img src="/2017/0129/programa_s.png" class="right"/></a>
           <font color="blue">Ruta: </font>Puerto Somosierra-Tres Provincias-Reajo del Puerto-El Cervunal-Pico el Lobo-Estación de la Pinilla
           <br/><br/><font color="blue">Alternativa: </font>Santo Tomé del Puerto-El Batán-Casa del Raso-Estación de la Pinilla
-          <br/><br/><b><a href="/2017/0122/tracks.zip">Estos tracks</a> <font color="red">son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club</font></b>. <a href="/2017/0122/170122_a.gpx" target='_new'>Track A</a>, <a href="/2017/0122/170122_b.gpx" target='_new'>track B</a>
+          <br/><br/><b><a href="/2017/0129/tracks.zip">Estos tracks</a> <font color="red">son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club</font></b>. <a href="/2017/0129/170129_a.gpx" target='_new'>Track A</a>, <a href="/2017/0129/170129_b.gpx" target='_new'>track B</a>
         </td>
       </tr>
       <tr>
@@ -38,7 +31,7 @@
       </tr>
       <tr>
         <td align="center" colspan='2'>
-             <a href="/2017/0122/mapa.pdf" target="_new">Mapa</a>
+          <a href="/2017/0129/mapa.pdf" target="_new">Mapa</a>
         </td>
       </tr>
     </table>

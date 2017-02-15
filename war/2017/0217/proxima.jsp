@@ -10,31 +10,28 @@
     <table style="width: 100%;">
       <tr>
         <td colspan="2">
-          <a href='/2017/0129/programa.png' target='_new'><img src="/2017/0129/programa_s.png" class="right"/></a>
-          <font color="blue">Ruta: </font>Puerto Somosierra-Tres Provincias-Reajo del Puerto-El Cervunal-Pico el Lobo-Estación de la Pinilla
-          <br/><br/><font color="blue">Alternativa: </font>Santo Tomé del Puerto-El Batán-Casa del Raso-Estación de la Pinilla
-          <br/><br/><b><a href="/2017/0129/tracks.zip">Estos tracks</a> <font color="red">son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club</font></b>. <a href="/2017/0129/170129_a.gpx" target='_new'>Track A</a>, <a href="/2017/0129/170129_b.gpx" target='_new'>track B</a>
+          <font color="blue"><b>Es obligatorio llevar crampones y piolet para las opciones A y B del sábado, subida al Moncayo</b></font>
+          <br/><br/><img src="/2017/0217/portada.jpg" class="right" width="460px"/>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='2'>
+          <br/><br/><a href="/2017/0217/tracks.zip" target='_new'>Estos tracks</a> son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club.
+          <ul>
+            <li><a href="/2017/0217/170218_a.gpx" target='_new'>Día 18 A</a></li>
+            <li><a href="/2017/0217/170218_b.gpx" target='_new'>Día 18 B</a></li>
+            <li><a href="/2017/0217/170218_c.gpx" target='_new'>Día 18 C</a></li>
+            <li><a href="/2017/0217/170219_a.gpx" target='_new'>Día 19 A</a></li>
+            <li><a href="/2017/0217/170219_b.gpx" target='_new'>Día 19 B</a></li>
+          </ul>
         </td>
       </tr>
       <tr>
         <td align="center" colspan='2'>
-          <%if ((Boolean) request.getAttribute("apuntado")) {%>
-            <font color="red">Ya estás apuntado</font>
-          <%}%>
-          <%if ((Boolean) request.getAttribute("permitirApunte")) {%>
-            <form action="/apunte_persona" method="post">
-              <input type="hidden" name="salida" value="${salida}"/>
-              <a href="#" onclick="apunte()">Apúntate aquí</a>
-            </form>
-          <%}%>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" colspan='2'>
-          <a href="/2017/0129/mapa.pdf" target="_new">Mapa</a>
+          <a href="/2017/0217/programa.pdf" target="_new">Programa</a>
         </td>
       </tr>
     </table>
-    <br/><br/><script type='text/javascript' src='http://www.aemet.es/es/eltiempo/prediccion/municipios/launchwidget/somosierra-id28143?w=g4p01110001ohmffffffw460z190x4f86d9t95b6e9r1s8n2'></script><noscript><a target='_blank' style='font-weight: bold;font-size: 1.20em;' href='http://www.aemet.es/es/eltiempo/prediccion/municipios/somosierra-id28143'>El Tiempo. Consulte la predicción de la AEMET para Somosierra</a></noscript>
+    <br/><br/><script type='text/javascript' src='http://www.aemet.es/es/eltiempo/prediccion/municipios/launchwidget/agreda-id42004?w=g4p01110001ohmffffffw460z190x4f86d9t95b6e9r1s8n2'></script><noscript><a target='_blank' style='font-weight: bold;font-size: 1.20em;' href='http://www.aemet.es/es/eltiempo/prediccion/municipios/agreda-id42004'>El Tiempo. Consulte la predicción de la AEMET para Ágreda</a></noscript>
   </article>
 </div>

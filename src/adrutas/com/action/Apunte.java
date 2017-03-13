@@ -26,6 +26,7 @@ public class Apunte extends ActionSupport {
     private String[] seleccionados;
     private Integer id_persona;
     private List<Map<String, String>> estados;
+    private Integer cont = 0;
 
     public List<Map<String, Object>> getLsalidas() {
         return lsalidas;
@@ -91,7 +92,11 @@ public class Apunte extends ActionSupport {
         return estados;
     }
 
-    public String execute() throws SQLException {
+    public Integer getCont() {
+		return cont;
+	}
+
+	public String execute() throws SQLException {
         list = new ArrayList<Map<String, Object>>();
         lsalidas = Salida.get();
         salida = salida==null? (String) lsalidas.get(0).get("salida"): salida;
@@ -119,7 +124,8 @@ public class Apunte extends ActionSupport {
             map.put("salida", salida);
             Salida.delete(map);
         }
-        for (Map<String, Object> bean: (list = Salida.getDetalle(salida))) {
+        cont = (list = Salida.getDetalle(salida)).size();
+        for (Map<String, Object> bean: list) {
             bean.put("asiento", bean.get("asiento")==null? "": Constante.nF1.format(bean.get("asiento")));
         }
         return SUCCESS;

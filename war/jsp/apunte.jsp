@@ -59,7 +59,7 @@
 <body>
   <form action="/apunte" id="target" method="post">
     <div class="center caja_l">
-      <h3>ALTA EN ACTIVIDAD</h3>
+      <h3>ALTA EN ACTIVIDAD (${cont} apuntados)</h3>
       <article>
         <table>
           <tr>

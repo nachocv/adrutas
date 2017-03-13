@@ -73,7 +73,7 @@ $(function() {
                 </tr>
                 <tr>
                   <td><label for="id_persona">Socio: </label></td>
-                  <td><input id="socio" class="input_50" readonly="readonly"/></td>
+                  <td><input id="id_persona" class="input_50" readonly="readonly"/><input type="hidden" id="socio" name="socio"/></td>
                   <td><label for="usuario">Usuario: </label></td>
                   <td><input id="usuario" class="input_100"></td>
                   <td><label for="dni">Dni: </label></td>

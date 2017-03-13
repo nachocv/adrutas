@@ -156,7 +156,7 @@ LEFT JOIN (select id_persona, telefono from (select id_persona, orden, telefono 
     SELECT socio, a.nombre, CONCAT(ifnull(apellido1, ""), ' ', ifnull(apellido2, "")) apellidos, dni,
          ifnull(nacimiento, "") nacimiento, ifnull(ingreso, "") ingreso, domicilio, sexo, poblacion, Provincia,
          codigo_postal, if(correo, "SI", "NO") correo, dni, nacimiento, ingreso, domicilio, sexo, poblacion, Provincia, codigo_postal,
-         correo, pz_castilla, ifnull(c.nombre,"") licencia, importecuota, importelicencia, d.importe
+         correo, pz_castilla, ifnull(c.nombre,"") licencia, importecuota, importelicencia, d.importe,a.id_persona
       FROM persona a, recibos d, ficha b left join licencias c on b.anyo=c.anyo and b.tipo_licencia=c.tipo_licencia
      WHERE a.id_persona=b.id_persona and b.id_recibo=d.id_recibo and a.id_persona=#{id_persona} and b.anyo=#{anyo}
   </select>

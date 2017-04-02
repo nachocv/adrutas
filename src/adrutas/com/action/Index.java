@@ -1,5 +1,6 @@
 package adrutas.com.action;
 
+import java.net.URL;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Date;
@@ -7,6 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.SortedMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.apache.struts2.ServletActionContext;
 
@@ -18,6 +21,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class Index extends ActionSupport {
     private static final long serialVersionUID = -1687066108273034896L;
+    private static final Logger log = Logger.getLogger(Index.class.getName());
 
     private String fecha;
     private List<Map<String, Object>> fotosPortada = new ArrayList<Map<String, Object>>();
@@ -75,9 +79,11 @@ public class Index extends ActionSupport {
 	}
 
 	public String execute() throws ParseException {
+		URL url;
         Date date = fecha==null? new Date(): Constante.dF3.parse(fecha);
         for (Entry<Date, Map<String, Object>> entry: Marchas.getMeventos().entrySet()) {
             index = (String) entry.getValue().get("url");
+//            log.log(Level.SEVERE, "La url es: " + (url = ClassLoader.getSystemResource(index))==null? "null": url.toString());
             hoy = (Date) entry.getValue().get("fechaInicio");
             salida = Integer.parseInt((String) entry.getValue().get("salida"));
             if (entry.getKey().after(date)) {

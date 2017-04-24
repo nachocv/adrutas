@@ -18,7 +18,7 @@
           <table>
             <tr class="top">
               <td>
-<%@ include file="/2017/0618/aviso1.jsp"%>
+<%@ include file="/2017/0611/aviso1.jsp"%>
 <%@ include file="/2017/bienvenida.jsp"%>
               </td>
               <td>

@@ -32,7 +32,7 @@
       <tr>
         <td height="81">JUNIO<br/>9 al 11</td>
         <td>
-          <a href="/2017/0609/programa.png" target="_new"><img src="/2017/0609/programa_s.png"/></a>
+          <a href="/2017/0616/programa.png" target="_new"><img src="/2017/0616/programa_s.png"/></a>
         </td>
         <td>Pico Cuartas y Espigüete</td>
         <td>

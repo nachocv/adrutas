@@ -18,7 +18,7 @@
         <td colspan='2'>
           <br/><br/><a href="/2017/0512/tracks.zip" target='_new'>Estos tracks</a> son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club.
           <ul>
-            <li><a href="/2017/0512/programa.pdf" target="_new">Programa Hotel</a></li>
+            <li><a href="/2017/0512/hotel.pdf" target="_new">Programa Hotel</a></li>
 	          <ul>
 	            <li><a href="/2017/0512/170513_h_a.gpx" target='_new'>Día 13 A</a></li>
 	            <li><a href="/2017/0512/170513_h_b.gpx" target='_new'>Día 13 B</a></li>
@@ -27,7 +27,7 @@
 	            <li><a href="/2017/0512/170515_h_a.gpx" target='_new'>Día 15 A</a></li>
 	            <li><a href="/2017/0512/170515_h_b.gpx" target='_new'>Día 15 B</a></li>
             </ul>
-            <li><a href="/2017/0512/programa.pdf" target="_new">Programa Refugio</a></li>
+            <li><a href="/2017/0512/refugio.pdf" target="_new">Programa Refugio</a></li>
             <ul>
               <li><a href="/2017/0512/170513_r.gpx" target='_new'>Día 13</a></li>
               <li><a href="/2017/0512/170514_r.gpx" target='_new'>Día 14</a></li>

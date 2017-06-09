@@ -41,7 +41,7 @@
       <tr>
         <td height="81">30 JUNIO<br/>9 JULIO</td>
         <td>
-          <a href="/2017/0630/programa.png" target="_new"><img src="/2017/0630/programa_s.png"/></a>
+          <a href="/2017/0701/programa.png" target="_new"><img src="/2017/0701/programa_s.png"/></a>
         </td>
         <td>Travesía Pirenaica-Pica d´Estats</td>
         <td>

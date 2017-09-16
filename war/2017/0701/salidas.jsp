@@ -23,7 +23,7 @@
       <tr>
         <td height="81">OCTUBRE<br/>12 al 15</td>
         <td>
-          <a href="/2017/1012/programa.png" target="_new"><img src="/2017/1012/programa_s.png"/></a>
+          <a href="/2017/1011/programa.png" target="_new"><img src="/2017/1011/programa_s.png"/></a>
         </td>
         <td>PICOS DE EUROPA-MORRA DE LECHUGALES</td>
         <td>

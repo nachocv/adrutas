@@ -1,0 +1,6 @@
+# ignora los archivos .classpath y .project
+.classpath
+.project
+# ignora los archivos compilados
+war/WEB-INF/classes/
+/bin/

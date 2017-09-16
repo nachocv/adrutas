@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="bono">
+  <select id="select" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+    SELECT bono,uso FROM bono_detalle where salida=#{salida} and id_persona=#{id_persona}
+  </select>
+
+  <select id="getUltimo" parameterType="java.lang.Integer" resultType="java.util.HashMap">
+		select bono,uso from bono_detalle where id_persona=#{id_persona} order by bono desc,uso desc limit 1
+  </select>
+
+  <delete id="delete" parameterType="java.util.HashMap">
+    DELETE FROM bono_detalle WHERE salida=#{salida} and id_persona=#{id_persona}
+  </delete>
+
+  <update id="put" parameterType="java.util.HashMap">
+    UPDATE bono_detalle SET bono=#{bono},uso=#{uso} where salida=#{salida} and id_persona=#{id_persona}
+  </update>
+
+  <insert id="insert" parameterType="java.util.HashMap">
+    INSERT INTO bono_detalle (bono,uso,salida,id_persona) VALUES (#{bono},#{uso},#{salida},#{id_persona})
+  </insert>
+</mapper>

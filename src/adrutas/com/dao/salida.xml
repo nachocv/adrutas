@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="salida">
+  <select id="get" resultType="java.util.HashMap">
+		   select a.salida, a.fecha fechaInicio, c.fecha fechaFin, a.url, a.portada, a.urlPortada, descripcion
+		     from (
+		        SELECT a.*, b.fecha
+		      FROM salida a, salida_fecha b
+		     WHERE a.salida = b.salida
+		       AND b.fecha_tipo=1) a
+		LEFT JOIN salida_fecha c ON a.salida = c.salida AND c.fecha_tipo=2
+		 ORDER BY a.salida desc
+  </select>
+
+  <select id="getSalida" parameterType="java.lang.Integer" resultType="java.util.HashMap">
+		SELECT a.*, b.fecha
+		  FROM salida a left join salida_fecha b on a.salida=b.salida and fecha_tipo=1
+		 where a.salida=#{salida}
+  </select>
+
+  <select id="cuentaDetalle" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+    SELECT count(*) cuenta FROM salida_detalle where salida=#{salida}
+  </select>
+
+  <select id="getOne" parameterType="java.lang.Integer" resultType="java.util.HashMap">
+		SELECT *
+		  FROM salida a, salida_fecha b
+		 WHERE a.salida = b.salida
+		   AND fecha_tipo=1
+		   AND a.salida=#{salida}
+  </select>
+
+  <select id="getDetalle" parameterType="java.lang.String" resultType="java.util.HashMap">
+    SELECT a.id_persona, b.socio, bus, asiento, estado, a.importe, c.importe ingreso, pago, seguro_dia, observacion,concat(d.bono,'-',d.uso) bono,
+           CONCAT(nombre, ' ', ifnull(APELLIDO1, ""), ' ', ifnull(APELLIDO2, "")) nombre,
+           (SELECT mensaje FROM persona_mensaje where a.salida>=salida and id_persona=a.id_persona order by salida desc,fecha_alta desc limit 1) mensaje
+      FROM persona b, recibos c,salida_detalle a left join bono_detalle d on d.id_persona=a.id_persona and d.salida=a.salida
+     where a.id_persona=b.id_persona and a.id_recibo=c.id_recibo and a.salida=#{salida}
+     ORDER BY bus, asiento, a.id_recibo
+  </select>
+
+  <select id="getMensaje" parameterType="java.util.HashMap" resultType="java.lang.String">
+    SELECT trim(mensaje) FROM persona_mensaje where #{salida}>=salida and id_persona=#{id_persona} order by salida desc,fecha_alta desc limit 1
+  </select>
+  
+  <select id="getDetalle2" resultType="java.util.HashMap">
+    SELECT *
+      FROM salida_detalle
+     ORDER BY salida, contador
+  </select>
+
+  <select id="getContadorDetalle" resultType="java.lang.String">
+    SELECT contador FROM salida_detalle order by contador desc limit 1
+  </select>
+
+  <select id="getDatosFicha" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+    SELECT if(not importecuota=0, (select precio from salida_precio c where c.salida=b.salida and precio_tipo=2),
+           (select precio from salida_precio c where c.salida=b.salida and precio_tipo=5)) importe,
+           if(tipo_licencia='S1D', 2, 0) seguro_dia
+      FROM ficha a, salida b
+     where a.anyo=b.anyo and b.salida=#{salida} and id_persona=#{id_persona}
+  </select>
+
+  <select id="getAnyo" parameterType="java.lang.String" resultType="java.lang.Integer">
+    select anyo from salida where salida = #{salida}
+  </select>
+
+  <select id="getListaTelefonos" parameterType="java.lang.Integer" resultType="java.util.HashMap">
+       select bus, if(asiento is null,'',bus*100+asiento) asiento,
+              a.id_persona, apellidos, nombre, ifnull(telefono, "") telefono
+         from (
+               SELECT bus, asiento, CONCAT(ifnull(apellido1, ""), ' ', ifnull(apellido2, "")) apellidos,
+                      nombre, a.id_persona
+                 FROM salida_detalle a, persona b
+                where a.id_persona=b.id_persona and a.salida=#{salid}
+              ) a
+    LEFT JOIN (select id_persona, telefono from (select id_persona, orden, telefono from socio_telefono where telefono like '6%') a
+     group by id_persona
+              ) c ON a.id_persona = c.id_persona
+     order by apellidos, nombre
+  </select>
+
+  <select id="getListaAsientos" parameterType="java.lang.Integer" resultType="java.util.HashMap">
+    select socio,bus,asiento,fp,importe,seguro_dia,nombre,if(observacion='',mensaje,
+           if(mensaje='',observacion,concat(observacion,'. ',mensaje))) observacion,ifnull(bono,'') bono
+      from (SELECT ifnull(socio, a.id_persona) socio, bus, ifnull(asiento, 0) asiento,concat(d.bono,'-',d.uso) bono,
+                   c.estado fp, c.importe, a.seguro_dia, CONCAT(if(APELLIDO1 is null, "", CONCAT(APELLIDO1, " ")),
+                   ifnull(APELLIDO2, ""), ", ", NOMBRE) nombre,ifnull(observacion,'') observacion,
+                   ifnull((SELECT mensaje
+                           FROM persona_mensaje
+                           where a.salida>=salida and id_persona=a.id_persona
+                           order by salida desc,fecha_alta desc limit 1),'') mensaje
+              FROM persona b, recibos c,salida_detalle a
+             left join bono_detalle d on d.id_persona=a.id_persona and d.salida=a.salida
+             where a.id_persona=b.id_persona and a.id_recibo=c.id_recibo and a.salida=#{salida}
+        order by bus, asiento) a
+  </select>
+
+  <select id="getPrecios" parameterType="java.lang.String" resultType="java.util.HashMap">
+    select *
+      from salida_precio a, salida b
+     where a.salida=b.salida and a.salida=#{salida}
+  </select>
+
+  <select id="getSeguroDia" parameterType="java.lang.String" resultType="java.lang.String">
+    SELECT a.valor
+      FROM propiedades_anuales a, salida b
+     where a.anyo=b.anyo and a.propiedad='S1D' and b.salida=#{salida}
+  </select>
+
+  <select id="getSalidas" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+			SELECT a.anyo, estado fp
+			  from salida a, salida_detalle b, recibos c
+			 where a.salida=b.salida and b.id_recibo=c.id_recibo
+			   and a.anyo>=#{anyo}-1
+			   and #{salida}>b.salida
+			   and id_persona=#{id_persona} and Tipo='N'
+		order by a.salida
+  </select>
+
+  <select id="getSalidasByAnyo" parameterType="java.lang.Integer" resultType="java.util.HashMap">
+      SELECT id_persona, count(*) cuenta
+        from salida_detalle
+       where anyo=#{anyo}
+    group by id_persona
+    order by count(*) desc;
+  </select>
+
+  <select id="apuntado" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+    SELECT * FROM salida_detalle where salida=#{salida} and id_persona=#{id_persona}
+  </select>
+
+  <select id="getFechas" parameterType="java.lang.Integer" resultType="java.util.HashMap">
+    SELECT * FROM salida_fecha where salida=#{salida}
+  </select>
+
+  <select id="getSalidaRecibos" parameterType="java.lang.Integer" resultType="java.util.HashMap">
+    SELECT a.bus,a.asiento,a.id_persona,a.id_recibo,fecha,a.importe imp_auto,b.importe,
+           seguro_dia,concat(d.bono,'-',d.uso) bono,estado,ingreso,pago,observacion,dni,nombre,apellido1,apellido2
+      FROM salida_detalle a LEFT JOIN bono_detalle d ON (a.salida=d.salida and a.id_persona=d.id_persona), recibos b, persona c
+     where a.id_recibo=b.id_recibo and a.id_persona=c.id_persona and a.salida=#{salida}
+  order by bus,asiento,id_recibo
+  </select>
+
+  <select id="getObservacion" resultType="java.util.HashMap">
+		select *
+		  from salida_detalle a
+		       left join bono_detalle b on b.salida=a.salida and b.id_persona=a.id_persona
+		 where observacion is not null and trim(observacion)!='' and b.bono is null
+  </select>
+
+  <insert id="insertDetalle" parameterType="java.util.HashMap">
+    INSERT INTO salida_detalle
+                (salida, id_persona, FP, id_recibo, Banco, Numero, JD, bus, asiento, Importe,
+                 Contabilizado, ContaContador, seguro_dia, Recoger, anyo, Fechaconta,
+                 DondeRecoger, contador, pago, bono, salidabono, Habitacion)
+         VALUES (#{salida},#{id_persona},#{FP},#{id_recibo},#{Banco},#{Numero},#{JD},#{bus},#{asiento},#{importe},
+                 #{Contabilizado},#{ContaContador},#{seguro_dia},#{Recoger},#{Ano},#{Fechaconta},
+                 #{DondeRecoger},#{contador},#{pago},#{bono},#{salidabono},#{Habitacion})
+  </insert>
+
+  <insert id="putMensaje" parameterType="java.util.HashMap">
+    INSERT INTO persona_mensaje (id_persona,salida,fecha_alta,mensaje) VALUES (#{id_persona},#{salida},now(),#{mensaje})
+  </insert>
+  
+  <update id="putImporte" parameterType="java.util.HashMap">
+    UPDATE salida_detalle
+       SET Importe=#{importe}, pago=#{pago}, seguro_dia=#{seguro_dia}, FP=#{fp}
+     WHERE salida=#{salida} and id_persona=#{id_persona}
+  </update>
+
+  <update id="putAsiento" parameterType="java.util.HashMap">
+    UPDATE salida_detalle
+       SET asiento=#{asiento}, bus=#{bus}, bono=#{bono}, observacion=#{observacion},
+           pago=#{pago}
+     WHERE salida=#{salida} and id_persona=#{id_persona}
+  </update>
+
+  <delete id="delete" parameterType="java.util.HashMap">
+    DELETE FROM salida_detalle
+     WHERE salida=#{salida} and id_persona=#{id_persona}
+  </delete>
+
+  <update id="putDetalle" parameterType="java.util.HashMap">
+    UPDATE salida_detalle
+       SET id_persona=#{id_persona},fp=#{fp},id_recibo=#{id_recibo},Banco=#{Banco},Numero=#{Numero},JD=#{JD},bus=#{bus},
+           asiento=#{asiento},importe=#{importe},Contabilizado=#{Contabilizado},ContaContador=#{ContaContador},
+           seguro_dia=#{seguro_dia},Recoger=#{Recoger},anyo=#{anyo},Fechaconta=#{Fechaconta},
+           DondeRecoger=#{DondeRecoger},imp_seguro_dia=#{imp_seguro_dia},bono=#{bono},salidabono=#{salidabono},
+           Habitacion=#{Habitacion},observacion=#{observacion}
+     WHERE salida=#{salida} and contador=${contador}
+  </update>
+
+  <update id="putDetalle2" parameterType="java.util.HashMap">
+    UPDATE salida_detalle SET contador=#{contador_new} where salida=#{salida} and contador=#{contador}
+  </update>
+
+  <update id="putSalida" parameterType="java.util.HashMap">
+    UPDATE salida SET url=#{url}, portada=#{portada}, urlPortada=#{urlPortada} WHERE salida=#{salida}
+  </update>
+
+  <update id="updateRecibosSalida" parameterType="java.lang.String">
+		update recibos
+		   set importe=(SELECT importe FROM salida_detalle where recibos.id_recibo=salida_detalle.id_recibo)
+		 where id_recibo in (SELECT id_recibo FROM salida_detalle where salida=#{salida})
+  </update>
+</mapper>

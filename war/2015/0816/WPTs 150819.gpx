@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="CompeGPS" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <link href="http://www.compegps.com">
+      <text>CompeGPS TEAM, SL</text>
+    </link>
+    <time>2015-08-08T22:24:54Z</time>
+    <bounds maxlat="47.291465" maxlon="11.246760" minlat="47.238185" minlon="11.122863"/>
+  </metadata>
+  <wpt lat="47.268269" lon="11.156166">
+    <ele>-9999.0</ele>
+    <name>Hattingberg</name>
+    <desc>Hattingberg DE</desc>
+    <sym>City (Small)</sym>
+    <time>2015-08-06T10:22:57Z</time>
+  </wpt>
+  <wpt lat="47.291465" lon="11.122863">
+    <ele>-9999.0</ele>
+    <name>Flaurling</name>
+    <desc>Flaurling DE</desc>
+    <sym>City (Small)</sym>
+    <time>2015-08-06T04:05:22Z</time>
+  </wpt>
+  <wpt lat="47.249043" lon="11.134944">
+    <ele>-9999.0</ele>
+    <name>Rauher Kopf</name>
+    <desc>Rauher Kopf DE</desc>
+    <sym>Summit</sym>
+    <time>2015-08-06T04:04:53Z</time>
+  </wpt>
+  <wpt lat="47.242648" lon="11.181421">
+    <ele>-9999.0</ele>
+    <name>Rangger Köpfl</name>
+    <desc>Rangger Köpfl DE</desc>
+    <sym>Summit</sym>
+    <time>2015-08-06T04:04:32Z</time>
+  </wpt>
+  <wpt lat="47.238185" lon="11.221933">
+    <ele>-9999.0</ele>
+    <name>Stiglreith</name>
+    <desc>Stiglreith DE</desc>
+    <sym>Restaurant</sym>
+    <time>2015-08-06T04:04:04Z</time>
+  </wpt>
+  <wpt lat="47.243786" lon="11.246760">
+    <ele>-9999.0</ele>
+    <name>Oberperfuss</name>
+    <desc>Oberperfuss DE</desc>
+    <sym>City (Small)</sym>
+    <time>2015-08-06T04:03:52Z</time>
+  </wpt>
+</gpx>

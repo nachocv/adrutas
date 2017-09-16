@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="false" />
+
+	<package name="basicstruts2" extends="struts-default">
+	 <interceptors>
+	   <interceptor name="rolesNacho" class="adrutas.com.interceptor.RolesInterceptor"/>
+	 </interceptors>
+
+    <action name="init" class="adrutas.com.action.Init">
+    </action>
+	 
+    <action name="index" class="adrutas.com.action.Index">
+      <result name="success">/index.jsp</result>
+    </action>
+
+    <action name="" class="adrutas.com.action.Index">
+      <result name="success">/index.jsp</result>
+    </action>
+
+    <action name="index_album" class="adrutas.com.action.Index">
+      <result name="success">/jsp/index_album.jsp</result>
+    </action>
+
+    <action name="recalcula" class="adrutas.com.action.Recalcula">
+      <result name="success">/jsp/apunte.jsp</result>
+    </action>
+
+    <action name="apunte" class="adrutas.com.action.Apunte">
+      <interceptor-ref name="params"/>
+      <interceptor-ref name="rolesNacho">
+        <param name="allowedRoles">1,2,3,4,5,6</param>
+      </interceptor-ref>
+      <result name="success">/jsp/apunte.jsp</result>
+      <result name="ficha">/ficha.action</result>
+      <result name="cancel">/jsp/index.jsp</result>
+    </action>
+
+    <action name="apunte_lista" class="adrutas.com.action.Apunte">
+      <result name="success">/jsp/apunte.jsp</result>
+      <result name="ficha">/ficha.action</result>
+      <result name="cancel">/jsp/index.jsp</result>
+    </action>
+
+    <action name="bonos" class="adrutas.com.action.Bono">
+      <result name="success">/jsp/apunte.jsp</result>
+      <result name="ficha">/ficha.action</result>
+      <result name="cancel">/jsp/index.jsp</result>
+    </action>
+    
+    <action name="apunte_persona" class="adrutas.com.action.ApuntePersona">
+      <result name="success" type="redirectAction">
+        <param name="actionName">index</param>
+      </result>
+    </action>
+
+    <action name="persona15" class="adrutas.com.action.Persona15">
+      <interceptor-ref name="params"/>
+      <interceptor-ref name="rolesNacho">
+        <param name="allowedRoles">1,2,3,4,5,6</param>
+      </interceptor-ref>
+      <result name="success">/jsp/persona15.jsp</result>
+      <result name="cancel">/jsp/index.jsp</result>
+      <result name="usuario" type="redirectAction">
+        <param name="actionName">modifica_usuario</param>
+      </result>
+    </action>
+
+    <action name="persona" class="adrutas.com.action.Persona">
+      <interceptor-ref name="params"/>
+      <interceptor-ref name="rolesNacho">
+        <param name="allowedRoles">1,2,3,4,5,6</param>
+      </interceptor-ref>
+      <result name="success">/jsp/persona.jsp</result>
+      <result name="cancel">/jsp/index.jsp</result>
+      <result name="usuario" type="redirectAction">
+        <param name="actionName">modifica_usuario</param>
+      </result>
+    </action>
+    
+    <action name="usuario" class="adrutas.com.action.Persona">
+      <result name="success">/jsp/persona.jsp</result>
+      <result name="cancel">/jsp/index.jsp</result>
+      <result name="usuario" type="redirectAction">
+        <param name="actionName">modifica_usuario</param>
+      </result>
+    </action>
+
+    <action name="filtroPersona" class="adrutas.com.action.FiltroPersona"></action>
+
+    <action name="filtroPersona15" class="adrutas.com.action.FiltroPersona15"></action>
+    
+    <action name="lista_alfa" class="adrutas.com.action.ListaAlfa">
+      <result name="success">/jsp/apunte.jsp</result>
+      <result name="cancel">/jsp/index.jsp</result>
+    </action>
+
+    <action name="lista_asientos" class="adrutas.com.action.ListaAsientos">
+      <result name="success">/jsp/apunte.jsp</result>
+      <result name="cancel">/jsp/index.jsp</result>
+    </action>
+
+    <action name="lista_ficha" class="adrutas.com.action.ListaFicha">
+      <result name="success">/jsp/persona.jsp</result>
+      <result name="cancel">/jsp/index.jsp</result>
+    </action>
+
+    <action name="excel_socios" class="adrutas.com.action.ExcelSocios">
+      <result name="success">/jsp/persona.jsp</result>
+      <result name="cancel">/jsp/index.jsp</result>
+    </action>
+
+    <action name="contabilidadSocios" class="adrutas.com.action.ExcelSociosContable">
+      <result name="success">/jsp/persona.jsp</result>
+      <result name="cancel">/jsp/index.jsp</result>
+    </action>
+    
+    <action name="socios_correo" class="adrutas.com.action.SociosCorreo">
+      <result name="success">/jsp/persona.jsp</result>
+      <result name="cancel">/jsp/index.jsp</result>
+    </action>
+
+    <action name="excel_etiquetas_socios" class="adrutas.com.action.ExcelEtiquetasSocios">
+      <result name="success">/jsp/persona.jsp</result>
+      <result name="cancel">/jsp/index.jsp</result>
+    </action>
+
+    <action name="excel_gmail" class="adrutas.com.action.ExcelGmail">
+      <result name="success">/jsp/persona.jsp</result>
+      <result name="cancel">/jsp/index.jsp</result>
+    </action>
+
+    <action name="excelContable" class="adrutas.com.action.ExcelContable">
+      <result name="success">/jsp/persona.jsp</result>
+      <result name="cancel">/jsp/index.jsp</result>
+    </action>
+
+    <action name="simpatizantes" class="adrutas.com.action.Simpatizantes">
+      <result name="success">/jsp/persona.jsp</result>
+    </action>
+
+    <action name="log" class="adrutas.com.action.Log">
+      <result name="success" type="redirectAction">
+        <param name="actionName">index</param>
+      </result>
+      <result name="error" type="redirectAction">
+        <param name="actionName">index</param>
+      </result>
+    </action>
+
+    <action name="close_session" class="adrutas.com.action.CloseSession">
+      <result name="success" type="redirectAction">
+        <param name="actionName">index</param>
+      </result>
+      <result name="error">/</result>
+    </action>
+
+    <action name="modifica_usuario" class="adrutas.com.action.Usuario">
+      <result name="success">/jsp/usuario.jsp</result>
+      <result name="index" type="redirectAction">
+        <param name="actionName">index</param>
+      </result>
+      <result name="cancel" type="redirectAction">
+        <param name="actionName">index</param>
+      </result>
+    </action>
+
+    <action name="modifica_ficha" class="adrutas.com.action.Ficha">
+      <result name="success">/jsp/ficha.jsp</result>
+      <result name="index">/2014/0201/index2.jsp</result>
+      <result name="cancel">/index.jsp</result>
+    </action>
+
+    <action name="renewPassword" class="adrutas.com.action.RenewPassword">
+      <result name="error">/jsp/emailErroneo.jsp</result>
+      <result name="success" type="redirectAction">
+        <param name="actionName">index</param>
+      </result>
+      <result name="cancel">/index.jsp</result>
+    </action>
+
+    <action name="changePassword" class="adrutas.com.action.ChangePassword">
+      <result name="success">/jsp/changePassword.jsp</result>
+      <result name="change" type="redirectAction">
+        <param name="actionName">index</param>
+      </result>
+    </action>
+
+    <action name="identify" class="adrutas.com.action.Identify">
+      <result name="success">/index.jsp</result>
+    </action>
+
+    <action name="olvido" class="adrutas.com.action.OlvidoAction">
+      <result name="ok">/index.jsp</result>
+      <result name="cancel">index.jsp</result>
+    </action>
+
+    <action name="fotos" class="adrutas.com.action.Fotos">
+      <result name="success">/2016/index_album.jsp</result>
+    </action>
+
+    <action name="hora" class="adrutas.com.action.Hora">
+      <result name="success">/jsp/hora.jsp</result>
+    </action>
+	</package>
+</struts>

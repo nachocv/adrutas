@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="album">
+  <select id="get" resultType="java.util.HashMap">
+    SELECT a.salida, a.id_persona, a.cont, a.url,
+           trim(CONCAT(b.nombre, ' ', ifnull(b.APELLIDO1, ""), ' ', ifnull(b.APELLIDO2, ""))) nombre
+      FROM album a, persona b
+     WHERE a.id_persona=b.id_persona
+  order by salida, cont
+  </select>
+
+  <select id="getAlbum" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+		SELECT * FROM album where salida=#{salida} and id_persona=#{id_persona}
+  </select>
+
+  <insert id="insert" parameterType="java.util.HashMap">
+    INSERT INTO album (salida, cont, url, id_persona)
+               VALUES (#{salida}, #{cont}, #{url}, (SELECT id_persona from persona WHERE socio=#{socio}))
+  </insert>
+</mapper>

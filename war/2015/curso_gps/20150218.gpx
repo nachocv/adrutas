@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:rmc="urn:net:trekbuddy:1.0:nmea:rmc" creator="QLandkarteGT 1.7.5 http://www.qlandkarte.org/" xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.qlandkarte.org/xmlschemas/v1.1 http://www.qlandkarte.org/xmlschemas/v1.1/ql-extensions.xsd" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:ql="http://www.qlandkarte.org/xmlschemas/v1.1">
+ <metadata>
+  <time>2015-02-07T07:15:11Z</time>
+ </metadata>
+ <wpt lon="-3.71131945" lat="40.42327118">
+  <ele>635.95</ele>
+  <time>2014-05-09T10:18:03Z</time>
+  <name>1</name>
+  <sym>Waypoint</sym>
+  <extensions>
+   <ql:key>139963068311</ql:key>
+  </extensions>
+ </wpt>
+ <wpt lon="-3.71195197" lat="40.42407227">
+  <ele>0</ele>
+  <time>2014-05-09T12:15:57Z</time>
+  <name>2</name>
+  <sym>Waypoint</sym>
+  <extensions>
+   <ql:key>139963775728</ql:key>
+  </extensions>
+ </wpt>
+ <wpt lon="-3.71268702" lat="40.42337799">
+  <ele>0</ele>
+  <time>2014-05-09T12:17:00Z</time>
+  <name>3</name>
+  <sym>Waypoint</sym>
+  <extensions>
+   <ql:key>139963782039</ql:key>
+  </extensions>
+ </wpt>
+ <wpt lon="-3.71422577" lat="40.42300415">
+  <ele>629.59</ele>
+  <time>2014-05-09T10:21:43Z</time>
+  <name>4</name>
+  <sym>Waypoint</sym>
+  <extensions>
+   <ql:key>139963090342</ql:key>
+  </extensions>
+ </wpt>
+ <wpt lon="-3.71554255" lat="40.42320251">
+  <ele>637.74</ele>
+  <time>2014-05-09T10:23:07Z</time>
+  <name>5</name>
+  <sym>Waypoint</sym>
+  <extensions>
+   <ql:key>139963098753</ql:key>
+  </extensions>
+ </wpt>
+ <wpt lon="-3.71669936" lat="40.42401123">
+  <ele>632.8</ele>
+  <time>2014-05-09T10:25:03Z</time>
+  <name>6</name>
+  <sym>Waypoint</sym>
+  <extensions>
+   <ql:key>139963110364</ql:key>
+  </extensions>
+ </wpt>
+ <wpt lon="-3.71856856" lat="40.42346191">
+  <ele>635.75</ele>
+  <time>2014-05-09T10:27:48Z</time>
+  <name>7</name>
+  <sym>Waypoint</sym>
+  <extensions>
+   <ql:key>139963126875</ql:key>
+  </extensions>
+ </wpt>
+ <wpt lon="-3.71395898" lat="40.42245865">
+  <ele>620.86</ele>
+  <time>2014-05-09T10:35:36Z</time>
+  <name>8</name>
+  <sym>Waypoint</sym>
+  <extensions>
+   <ql:key>139963173686</ql:key>
+  </extensions>
+ </wpt>
+ <wpt lon="-3.71375275" lat="40.42260742">
+  <ele>620.86</ele>
+  <time>2014-05-09T10:35:36Z</time>
+  <name>9</name>
+  <sym>Waypoint</sym>
+  <extensions>
+   <ql:key>1399631736910</ql:key>
+  </extensions>
+ </wpt>
+ <wpt lon="-3.71293330" lat="40.42508316">
+  <ele>642</ele>
+  <time>2014-05-09T10:40:12Z</time>
+  <name>Final</name>
+  <cmt>
+
+Nombre: Segment 1
+
+
+Hora Inicio: 05/09/2014 12:15
+Hora Fin: 05/09/2014 12:39
+Distancia recorrida: 1,9 km (00:23)
+Tiempo en movimiento: 00:15
+Velocidad media: 4,8 km/h
+Vel. en Mov.: 6,9 km/h
+Velocida</cmt>
+  <desc>&lt;br />&lt;h3>Nombre: Segment 1&lt;/h3>&lt;br />&lt;p>Hora Inicio: 05/09/2014 12:15&lt;/p>&lt;p>Hora Fin: 05/09/2014 12:39&lt;/p>&lt;p>Distancia recorrida: 1,9 km (00:23)&lt;/p>&lt;p>Tiempo en movimiento: 00:15&lt;/p>&lt;p>Velocidad media: 4,8 km/h&lt;/p>&lt;p>Vel. en Mov.: 6,9 km/h&lt;/p>&lt;p>Velocida</desc>
+  <sym>Waypoint</sym>
+  <extensions>
+   <ql:key>139963201200003287</ql:key>
+  </extensions>
+ </wpt>
+ <wpt lon="-3.71061659" lat="40.42269897">
+  <ele>644</ele>
+  <time>2014-05-09T10:16:20Z</time>
+  <name>Inicio</name>
+  <cmt></cmt>
+  <sym>Waypoint</sym>
+  <extensions>
+   <ql:key>139963058000003210</ql:key>
+  </extensions>
+ </wpt>
+ <trk>
+  <name>Curso GPS_1</name>
+  <extensions>
+   <gpxx:TrackExtension>
+    <gpxx:DisplayColor>DarkRed</gpxx:DisplayColor>
+   </gpxx:TrackExtension>
+   <ql:key>1423293106Curso GPS_10</ql:key>
+  </extensions>
+  <trkseg>
+   <trkpt lon="-3.71060848" lat="40.42269897">
+    <ele>643.53</ele>
+    <time>2014-05-09T10:15:40.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71049666" lat="40.42286301">
+    <ele>618.94</ele>
+    <time>2014-05-09T10:15:56.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71060514" lat="40.42302704">
+    <ele>623.1</ele>
+    <time>2014-05-09T10:16:13.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71072888" lat="40.42317963">
+    <ele>620.53</ele>
+    <time>2014-05-09T10:16:25.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71096373" lat="40.42316437">
+    <ele>621.79</ele>
+    <time>2014-05-09T10:16:43.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71119165" lat="40.42324829">
+    <ele>602.19</ele>
+    <time>2014-05-09T10:17:04.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71142769" lat="40.42326355">
+    <ele>646.8</ele>
+    <time>2014-05-09T10:17:52.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71165824" lat="40.42331696">
+    <ele>630.29</ele>
+    <time>2014-05-09T10:18:07.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71189547" lat="40.42327118">
+    <ele>620.53</ele>
+    <time>2014-05-09T10:18:20.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71211553" lat="40.42317963">
+    <ele>628.98</ele>
+    <time>2014-05-09T10:18:34.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71235728" lat="40.42317200">
+    <ele>627.99</ele>
+    <time>2014-05-09T10:18:57.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71247816" lat="40.42333221">
+    <ele>624.47</ele>
+    <time>2014-05-09T10:19:09.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71272159" lat="40.42336655">
+    <ele>627.87</ele>
+    <time>2014-05-09T10:19:27.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71286416" lat="40.42321014">
+    <ele>626.54</ele>
+    <time>2014-05-09T10:19:45.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71303344" lat="40.42308044">
+    <ele>630.46</ele>
+    <time>2014-05-09T10:19:58.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71327019" lat="40.42308044">
+    <ele>633.89</ele>
+    <time>2014-05-09T10:20:09.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71351123" lat="40.42303848">
+    <ele>632.47</ele>
+    <time>2014-05-09T10:20:19.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71373558" lat="40.42298126">
+    <ele>632</ele>
+    <time>2014-05-09T10:20:30.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71398187" lat="40.42298126">
+    <ele>631.63</ele>
+    <time>2014-05-09T10:20:44.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71422267" lat="40.42299652">
+    <ele>636.31</ele>
+    <time>2014-05-09T10:20:58.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71440101" lat="40.42311859">
+    <ele>625</ele>
+    <time>2014-05-09T10:21:21.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71459723" lat="40.42299271">
+    <ele>628.83</ele>
+    <time>2014-05-09T10:21:28.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71483493" lat="40.42297745">
+    <ele>632.3</ele>
+    <time>2014-05-09T10:21:40.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71508694" lat="40.42297745">
+    <ele>627.1</ele>
+    <time>2014-05-09T10:21:56.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71529579" lat="40.42307281">
+    <ele>628.89</ele>
+    <time>2014-05-09T10:22:08.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71550083" lat="40.42319107">
+    <ele>633.71</ele>
+    <time>2014-05-09T10:22:21.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71571803" lat="40.42327881">
+    <ele>629.39</ele>
+    <time>2014-05-09T10:22:44.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71592188" lat="40.42338562">
+    <ele>631.03</ele>
+    <time>2014-05-09T10:22:57.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71612883" lat="40.42348099">
+    <ele>627.13</ele>
+    <time>2014-05-09T10:23:09.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71637750" lat="40.42350769">
+    <ele>639.59</ele>
+    <time>2014-05-09T10:23:30.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71652889" lat="40.42364883">
+    <ele>639.35</ele>
+    <time>2014-05-09T10:23:43.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71665430" lat="40.42381287">
+    <ele>646.29</ele>
+    <time>2014-05-09T10:23:58.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71669960" lat="40.42399216">
+    <ele>634.79</ele>
+    <time>2014-05-09T10:24:10.000Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+ <trk>
+  <name>Curso GPS_2_2_2</name>
+  <extensions>
+   <gpxx:TrackExtension>
+    <gpxx:DisplayColor>DarkRed</gpxx:DisplayColor>
+   </gpxx:TrackExtension>
+   <ql:key>1423293150Curso GPS_2_2_25</ql:key>
+  </extensions>
+  <trkseg>
+   <trkpt lon="-3.71868682" lat="40.42380142">
+    <ele>639.89</ele>
+    <time>2014-05-09T10:27:29.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71856880" lat="40.42363739">
+    <ele>642.44</ele>
+    <time>2014-05-09T10:27:42.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71856141" lat="40.42345428">
+    <ele>637.73</ele>
+    <time>2014-05-09T10:27:56.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71831059" lat="40.42343140">
+    <ele>644.34</ele>
+    <time>2014-05-09T10:28:19.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71808171" lat="40.42338181">
+    <ele>647.3</ele>
+    <time>2014-05-09T10:28:33.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71786785" lat="40.42328262">
+    <ele>640.44</ele>
+    <time>2014-05-09T10:28:47.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71766114" lat="40.42318344">
+    <ele>634.08</ele>
+    <time>2014-05-09T10:28:59.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71746922" lat="40.42307281">
+    <ele>637.65</ele>
+    <time>2014-05-09T10:29:09.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71728468" lat="40.42294312">
+    <ele>633.44</ele>
+    <time>2014-05-09T10:29:21.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71707678" lat="40.42284775">
+    <ele>637.58</ele>
+    <time>2014-05-09T10:29:33.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71682024" lat="40.42287064">
+    <ele>638.68</ele>
+    <time>2014-05-09T10:29:48.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71665263" lat="40.42300415">
+    <ele>640.03</ele>
+    <time>2014-05-09T10:30:02.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71657348" lat="40.42318344">
+    <ele>638.68</ele>
+    <time>2014-05-09T10:30:13.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71649003" lat="40.42337036">
+    <ele>638.71</ele>
+    <time>2014-05-09T10:30:25.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71637940" lat="40.42353058">
+    <ele>644.33</ele>
+    <time>2014-05-09T10:30:37.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71614265" lat="40.42348862">
+    <ele>640.82</ele>
+    <time>2014-05-09T10:30:53.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71594000" lat="40.42338562">
+    <ele>636.69</ele>
+    <time>2014-05-09T10:31:04.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71573138" lat="40.42328644">
+    <ele>639.57</ele>
+    <time>2014-05-09T10:31:15.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71550941" lat="40.42319870">
+    <ele>636.01</ele>
+    <time>2014-05-09T10:31:28.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71529818" lat="40.42309189">
+    <ele>633.43</ele>
+    <time>2014-05-09T10:31:39.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71511006" lat="40.42296982">
+    <ele>636.24</ele>
+    <time>2014-05-09T10:31:51.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71488714" lat="40.42288589">
+    <ele>633.8</ele>
+    <time>2014-05-09T10:32:03.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71465158" lat="40.42282486">
+    <ele>634.59</ele>
+    <time>2014-05-09T10:32:17.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71441579" lat="40.42275620">
+    <ele>635.52</ele>
+    <time>2014-05-09T10:32:29.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71424985" lat="40.42262268">
+    <ele>637.34</ele>
+    <time>2014-05-09T10:32:45.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71406031" lat="40.42251205">
+    <ele>632.93</ele>
+    <time>2014-05-09T10:32:56.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71387267" lat="40.42240143">
+    <ele>633.8</ele>
+    <time>2014-05-09T10:33:07.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71366572" lat="40.42228317">
+    <ele>632.94</ele>
+    <time>2014-05-09T10:33:19.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71349502" lat="40.42215347">
+    <ele>628.33</ele>
+    <time>2014-05-09T10:33:34.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71370268" lat="40.42226791">
+    <ele>635.38</ele>
+    <time>2014-05-09T10:34:04.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71382308" lat="40.42242432">
+    <ele>643.49</ele>
+    <time>2014-05-09T10:34:15.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71375823" lat="40.42260742">
+    <ele>663.18</ele>
+    <time>2014-05-09T10:34:41.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71355987" lat="40.42271423">
+    <ele>636.96</ele>
+    <time>2014-05-09T10:35:13.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71356988" lat="40.42289734">
+    <ele>639.77</ele>
+    <time>2014-05-09T10:35:27.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71359849" lat="40.42308426">
+    <ele>642.14</ele>
+    <time>2014-05-09T10:35:39.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71338630" lat="40.42317963">
+    <ele>645.01</ele>
+    <time>2014-05-09T10:35:49.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71318364" lat="40.42329407">
+    <ele>635.51</ele>
+    <time>2014-05-09T10:36:02.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71298647" lat="40.42341614">
+    <ele>631.99</ele>
+    <time>2014-05-09T10:36:14.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71289539" lat="40.42358017">
+    <ele>631.36</ele>
+    <time>2014-05-09T10:36:28.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71291852" lat="40.42376709">
+    <ele>642.22</ele>
+    <time>2014-05-09T10:37:06.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71278071" lat="40.42391586">
+    <ele>636.74</ele>
+    <time>2014-05-09T10:37:18.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71257257" lat="40.42401123">
+    <ele>635.88</ele>
+    <time>2014-05-09T10:37:29.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71266103" lat="40.42419434">
+    <ele>633.77</ele>
+    <time>2014-05-09T10:37:46.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71276474" lat="40.42438889">
+    <ele>689.44</ele>
+    <time>2014-05-09T10:38:09.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71285248" lat="40.42455292">
+    <ele>687.74</ele>
+    <time>2014-05-09T10:38:21.000Z</time>
+   </trkpt>
+   <trkpt lon="-3.71293187" lat="40.42508316">
+    <ele>641.55</ele>
+    <time>2014-05-09T10:39:07.000Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+ <extensions/>
+</gpx>

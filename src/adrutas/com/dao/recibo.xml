@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="recibo">
+  <select id="getUltimo" resultType="java.lang.Integer">
+    SELECT id_recibo FROM recibos order by id_recibo desc limit 1
+  </select>
+
+  <update id="update" parameterType="java.util.HashMap">
+    UPDATE recibos SET tabla=#{tabla}, fecha=#{fecha}, importe=#{ingreso}, estado=#{fp}, directivo=#{directivo}
+     WHERE id_recibo=#{id_recibo}
+  </update>
+
+  <insert id="insert" parameterType="java.util.HashMap">
+    INSERT INTO recibos
+                (id_recibo, tabla, fecha, importe, estado, directivo)
+         VALUES (#{id_recibo}, #{tabla}, #{fecha}, #{ingreso}, #{fp}, #{directivo})
+  </insert>
+
+  <update id="put" parameterType="java.util.HashMap">
+    UPDATE recibos SET importe=#{ingreso}, estado=#{estado}
+     WHERE id_recibo=(select id_recibo from salida_detalle where salida=#{salida} and id_persona=#{id_persona})
+  </update>
+
+  <delete id="delete" parameterType="java.util.HashMap">
+    DELETE FROM recibos WHERE id_recibo=#{id_recibo}
+  </delete>
+</mapper>

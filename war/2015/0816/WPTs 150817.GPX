@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="CompeGPS" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <link href="http://www.compegps.com">
+      <text>CompeGPS TEAM, SL</text>
+    </link>
+    <time>2015-08-06T03:23:30Z</time>
+    <bounds maxlat="47.016356" maxlon="11.186850" minlat="46.995671" minlon="11.120718"/>
+  </metadata>
+  <wpt lat="47.014275" lon="11.186850">
+    <ele>-9999.0</ele>
+    <name>Grawa Alm</name>
+    <desc>Grawa Alm DE</desc>
+    <sym>Restaurant</sym>
+    <time>2015-08-03T10:09:18Z</time>
+  </wpt>
+  <wpt lat="46.995842" lon="11.181915">
+    <ele>-9999.0</ele>
+    <name>SULZENAUHÜTTE</name>
+    <desc>SULZENAUHÜTTE DE</desc>
+    <sym>Navaid</sym>
+    <time>2015-08-03T10:00:51Z</time>
+    <link href="39">
+      <text>39</text>
+    </link>
+  </wpt>
+  <wpt lat="46.995671" lon="11.160350">
+    <ele>-9999.0</ele>
+    <name>Grosser Trögler</name>
+    <desc>Grosser Trögler DE</desc>
+    <sym>Summit</sym>
+    <time>2015-08-03T10:00:00Z</time>
+  </wpt>
+  <wpt lat="46.998053" lon="11.139579">
+    <ele>-9999.0</ele>
+    <name>DRESDNER HÜTTE</name>
+    <desc>DRESDNER HÜTTE DE</desc>
+    <sym>Navaid</sym>
+    <time>2015-08-03T09:58:46Z</time>
+    <link href="39">
+      <text>39</text>
+    </link>
+  </wpt>
+  <wpt lat="47.012043" lon="11.157346">
+    <ele>-9999.0</ele>
+    <name>Mutterberg Stadl</name>
+    <desc>Mutterberg Stadl DE</desc>
+    <sym>Bar</sym>
+    <time>2015-08-03T09:57:47Z</time>
+  </wpt>
+  <wpt lat="47.016356" lon="11.128356">
+    <ele>-9999.0</ele>
+    <name>Mutterberger See</name>
+    <desc>Mutterberger See</desc>
+    <sym>Waypoint</sym>
+    <time>2015-08-03T17:39:22Z</time>
+  </wpt>
+  <wpt lat="47.013416" lon="11.120718">
+    <ele>-9999.0</ele>
+    <name>Glamergrube</name>
+    <desc>Glamergrube DE</desc>
+    <sym>City (Small)</sym>
+    <time>2015-08-03T17:36:56Z</time>
+  </wpt>
+  <wpt lat="46.998053" lon="11.139579">
+    <ele>-9999.0</ele>
+    <name>DRESDNER HÜTTE</name>
+    <desc>DRESDNER HÜTTE DE</desc>
+    <sym>Navaid</sym>
+    <time>2015-08-03T17:32:55Z</time>
+    <link href="39">
+      <text>39</text>
+    </link>
+  </wpt>
+</gpx>

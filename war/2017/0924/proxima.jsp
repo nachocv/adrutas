@@ -19,6 +19,13 @@
           <a href='/2017/0924/programa.png' target='_new'><img src="/2017/0924/programa_s.png" class="right"/></a>
           <font color="blue">Ruta: </font>Puerto de la Quesera-Peña de la Silla-Corralón-Cuerda de Malcalzado-La Hiruelilla-Peñalba de la Sierra
           <br/><br/><font color="blue">Alternativa: </font>Puerto de la Quesera-Río Jaramilla-La Hiruelilla-Peñalba de la Sierra
+          <br/><br/><b><a href="/2017/0924/tracks.zip">Estos tracks</a> <font color="red">son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club</font></b>. <a href="/2017/0924/170924_a.gpx" target='_new'>Track A</a>, <a href="/2017/0924/170924_b.gpx" target='_new'>track B</a>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan='2'>
+          <a href="/2017/0924/mapa_170924.pdf" target="_new">Mapa</a>
+          <br/><a href="/2017/0924/dosier_170924.pdf" target="_new">Dosier</a>
         </td>
       </tr>
       <tr>

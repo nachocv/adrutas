@@ -10,45 +10,46 @@
 </head>
 
 <body>
-  <div id="contenedor">
-    <div id="header"></div>
+	<div id="contenedor">
+		<div id="header"></div>
     <table class="tabla_contenedor art-article">
-      <tr>
-        <td class="td_contenedor">
+			<tr>
+				<td class="td_contenedor">
           <table>
             <tr class="top">
               <td>
-<%@ include file="/2017/06/aviso1.jsp"%>
-<%@ include file="/2016/apunte.jsp"%>
+<%@ include file="/2017/aviso2.jsp"%>
 <%@ include file="/2017/bienvenida.jsp"%>
               </td>
               <td>
-<%@ include file="/2017/0815/proxima.jsp"%>
+<%@ include file="/2017/1011/aviso1.jsp"%>
+<%@ include file="/2017/1001/proxima.jsp"%>
 <%@ include file="/2016/ventajas_socio.jsp"%>
               </td>
               <td>
-<%@ include file="/2017/aviso1.jsp"%>
+<%@ include file="/2017/09/aviso1.jsp"%>
+<%@ include file="/2016/apunte.jsp"%>
 <%@ include file="/2017/seguros/fmm/federacion.jsp"%>
 <%@ include file="/2014/aviso.jsp"%>
 <%@ include file="/2016/noticias2.jsp"%>
               </td>
             </tr>
           </table>
-        </td>
-      </tr>
+				</td>
+			</tr>
       <tr>
         <td class="td_contenedor">
-<%@ include file="/2017/0815/excursiones.jsp"%>
-<%@ include file="/2017/0815/salidas.jsp"%>
+<%@ include file="/2017/1001/excursiones.jsp"%>
+<%@ include file="/2017/1001/salidas.jsp"%>
         </td>
       </tr>
-      <tr>
-        <td class="td_contenedor">
+			<tr>
+				<td class="td_contenedor">
 <%@ include file="/jsp/fotos.jsp"%>
-        </td>
-      </tr>
-    </table>
+				</td>
+			</tr>
+		</table>
 
 <%@ include file="/txt/footer.txt"%>
-  </div>
+	</div>
 </body>

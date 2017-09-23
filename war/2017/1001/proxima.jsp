@@ -9,7 +9,7 @@
       <font color="blue">¡¡YA NO HAY PLAZAS!!</font>
     <%}%>
   <%}%>
-    Domingo 1 de octubre
+    <br/>Domingo 1 de octubre
     <br/>Cuerda de la Peñita
   </h3>
   <article>

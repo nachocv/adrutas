@@ -9,7 +9,7 @@
       <font color="blue">¡¡YA NO HAY PLAZAS!!</font>
     <%}%>
   <%}%>
-    Domingo 24 de septiembre
+    <br/>Domingo 24 de septiembre
     <br/>Cresta de Dragón
   </h3>
   <article>

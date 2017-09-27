@@ -9,16 +9,6 @@
         <td width="110">NOTAS</td>
       </tr>
       <tr>
-        <td>Dom.<br/>1 OCT</td>
-        <td valign="middle">
-          <a href="/2017/1001/programa.png" target="_new"><img src="/2017/1001/programa_s.png"/></a>
-        </td>
-        <td>CUERDA DE LA PEÑITA</td>
-        <td>
-          <a href="/2017/1001/dosier_171001.pdf" target="_new">Dosier</a>
-        </td>
-      </tr>
-      <tr>
         <td>Dom.<br/>8 OCT</td>
         <td valign="middle">
           <a href="/2017/1008/programa.png" target="_new"><img src="/2017/1008/programa_s.png"/></a>
@@ -40,6 +30,14 @@
           <a href="/2017/1029/programa.png" target="_new"><img src="/2017/1029/programa_s.png"/></a>
         </td>
         <td>TEJERA NEGRA</td>
+        <td/>
+      </tr>
+      <tr>
+        <td>Dom.<br/>5 NOV</td>
+        <td valign="middle">
+          <a href="/2017/1105/programa.png" target="_new"><img src="/2017/1105/programa_s.png"/></a>
+        </td>
+        <td>CABEZA DE LA PARRA</td>
         <td/>
       </tr>
     </table>

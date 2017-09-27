@@ -19,11 +19,13 @@
           <a href='/2017/1001/programa.png' target='_new'><img src="/2017/1001/programa_s.png" class="right"/></a>
           <font color="blue">Ruta: </font>Atazar-Collado de la Palanca-Centenera-Collado de las Pilas-Cuerda de la Peñita-Valdesoto
           <br/><br/><font color="blue">Alternativa: </font>Pontón de la Oliva-Alpedrete de la Sierra-Tortuero-Valdesoto
+          <br/><br/><b><a href="/2017/1001/tracks.zip">Estos tracks</a> <font color="red">son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club</font></b>. <a href="/2017/1001/171001_a.gpx" target='_new'>Track A</a>, <a href="/2017/1001/171001_b.gpx" target='_new'>track B</a>
         </td>
       </tr>
       <tr>
         <td align="center" colspan='2'>
-          <a href="/2017/1001/dosier_171001.pdf" target="_new">Dosier</a>
+          <a href="/2017/1001/mapa_171001.pdf" target="_new">Mapa</a>
+          <br/><a href="/2017/1001/dosier_171001.pdf" target="_new">Dosier</a>
         </td>
       </tr>
       <tr>

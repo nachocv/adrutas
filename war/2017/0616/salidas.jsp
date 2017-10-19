@@ -42,7 +42,7 @@
       <tr>
         <td height="81">NOVIEMBRE<br/>9 al 12</td>
         <td>
-          <a href="/2017/1109/programa.png" target="_new"><img src="/2017/1109/programa_s.png"/></a>
+          <a href="/2017/1108/programa.png" target="_new"><img src="/2017/1108/programa_s.png"/></a>
         </td>
         <td>Hayedos del País Vasco-Amboto, Aizcorri</td>
         <td>

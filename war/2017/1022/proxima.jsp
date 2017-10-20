@@ -26,6 +26,7 @@
       <tr>
         <td align="center" colspan='2'>
           <a href="/2017/1022/mapa_171022.pdf" target="_new">Mapa</a>
+          <br/><a href="/2017/1022/dosier_171022.pdf" target="_new">Dosier</a>
         </td>
       </tr>
       <tr>

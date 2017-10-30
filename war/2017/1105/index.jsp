@@ -27,7 +27,7 @@
 <%@ include file="/2016/ventajas_socio.jsp"%>
               </td>
               <td>
-<%@ include file="/2017/10/aviso1.jsp"%>
+<%@ include file="/2017/11/aviso1.jsp"%>
 <%@ include file="/2016/apunte.jsp"%>
 <%@ include file="/2017/seguros/fmm/federacion.jsp"%>
 <%@ include file="/2014/aviso.jsp"%>

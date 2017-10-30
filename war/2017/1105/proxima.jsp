@@ -2,7 +2,6 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <div class="caja_m">
   <h3>
-    <font color="red">¡OJO! El domingo cambian la hora</font>
   <%if ((Boolean) request.getAttribute("presentarMensaje")) {%>
     <%if ((Boolean) request.getAttribute("hayPlazas")) {%>
       <font color="blue">¡¡QUEDAN PLAZAS LIBRES!!</font>

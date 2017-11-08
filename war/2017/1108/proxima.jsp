@@ -10,11 +10,18 @@
     <table style="width: 100%;">
       <tr>
         <td colspan="2">
-          Estos tracks son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club.
+          <a href="/2017/1108/tracks.zip">Estos tracks</a> <font color="red">son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club.
           <ul>
             <li><a href="/2017/1108/171109_a.gpx" target='_new'>Día 09 A</a></li>
             <li><a href="/2017/1108/171109_b.gpx" target='_new'>Día 09 B</a></li>
             <li><a href="/2017/1108/171109_c.gpx" target='_new'>Día 09 C</a></li>
+            <li><a href="/2017/1108/171110_a.gpx" target='_new'>Día 10 A</a></li>
+            <li><a href="/2017/1108/171110_b.gpx" target='_new'>Día 10 B</a></li>
+            <li><a href="/2017/1108/171111_a.gpx" target='_new'>Día 11 A</a></li>
+            <li><a href="/2017/1108/171111_b.gpx" target='_new'>Día 11 B</a></li>
+            <li><a href="/2017/1108/171112_a.gpx" target='_new'>Paseo largo por Bilbao</a></li>
+            <li><a href="/2017/1108/171112_b.gpx" target='_new'>Paseo corto por Bilbao</a></li>
+            <li><a href="/2017/1108/Wpts-Bilbao.gpx" target='_new'>Puntos singulares de Bilbao</a></li>
           </ul>
         </td>
       </tr>

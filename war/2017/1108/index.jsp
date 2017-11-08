@@ -23,6 +23,7 @@
               </td>
               <td>
 <%@ include file="/2017/1206/aviso1.jsp"%>
+<%@ include file="/2017/12/loteria.jsp"%>
 <%@ include file="/2017/1108/proxima.jsp"%>
 <%@ include file="/2016/ventajas_socio.jsp"%>
               </td>

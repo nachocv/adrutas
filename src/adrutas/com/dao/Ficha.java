@@ -11,6 +11,8 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.json.Json;
 import javax.json.JsonArray;
@@ -24,6 +26,7 @@ import adrutas.com.Constante;
 
 public class Ficha implements Serializable {
     private static final long serialVersionUID = 8711786401670306201L;
+    private static final Logger log = Logger.getLogger(Ficha.class.getName());
 
     public static Map<String, Object> get(int anyo, Integer id_persona) {
         Map<String, Object> bean = new HashMap<String, Object>();
@@ -82,6 +85,21 @@ public class Ficha implements Serializable {
         SqlSession session = Constante.getSession();
         try {
         	return session.selectList("ficha.getOpciones", bean);
+        } finally {
+            session.close();
+        }
+    }
+
+    public static Map<String, Object> getPersonaSalida(Map<String, Object> bean) throws SQLException {
+        SqlSession session = Constante.getSession();
+        try {
+            Map<String, Object> map = session.selectOne("ficha.getPersonaSalida", bean);
+            if (map==null) {
+                map = newFicha(((Integer) bean.get("anyo")).toString());
+            } else {
+                map.put("opciones", session.selectList("ficha.getOpciones", bean));
+            }
+            return map;
         } finally {
             session.close();
         }

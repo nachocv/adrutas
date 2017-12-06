@@ -24,6 +24,12 @@
       </tr>
       <tr>
         <td align="center" colspan='2'>
+          <a href="/2017/1126/mapa_171126.pdf" target="_new">Mapa</a>
+          <br/><a href="/2017/1126/dosier_171126.pdf" target="_new">Dosier</a>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan='2'>
           <%if ((Boolean) request.getAttribute("apuntado")) {%>
             <font color="red">Ya estás apuntado</font>
           <%}%>

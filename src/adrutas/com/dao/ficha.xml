@@ -1,72 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
- 
+
 <mapper namespace="ficha">
-  <select id="get" parameterType="java.util.HashMap" resultType="java.util.HashMap">
-		SELECT   CONCAT(nombre, ' ', ifnull(APELLIDO1, ""), ' ', ifnull(APELLIDO2, "")) nombre, a.*
-		FROM     ficha a, persona b
-		WHERE    a.id_persona = b.id_persona and anyo = #{anyo} and a.id_persona = #{id_persona}
+	<select id="get" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+		SELECT CONCAT(nombre, ' ', ifnull(APELLIDO1, ""), ' ',
+		ifnull(APELLIDO2, "")) nombre, a.*
+		FROM ficha a, persona b
+		WHERE
+		a.id_persona = b.id_persona and anyo = #{anyo} and a.id_persona =
+		#{id_persona}
 		ORDER BY fecha desc
-		LIMIT    1
-  </select>
+		LIMIT 1
+	</select>
 
-  <select id="getFichas" parameterType="java.lang.Integer" resultType="java.util.HashMap">
-    SELECT * FROM ficha a, recibos b where a.id_recibo=b.id_recibo and id_persona=#{id_persona} order by anyo asc,a.id_ficha asc
-  </select>
-  
-  <select id="getId_persona" parameterType="java.util.HashMap" resultType="java.util.HashMap">
-    SELECT * FROM ficha a, recibos b where a.id_recibo=b.id_recibo and id_persona = #{id_persona} and anyo = #{anyo}
-  </select>
+	<select id="getFichas" parameterType="java.lang.Integer"
+		resultType="java.util.HashMap">
+		SELECT * FROM ficha a, recibos b where a.id_recibo=b.id_recibo and
+		id_persona=#{id_persona} order by anyo asc,a.id_ficha asc
+	</select>
 
-  <select id="getPersonaAnyo" parameterType="java.util.HashMap" resultType="java.util.HashMap">
-    SELECT * FROM ficha a, recibos b where a.id_recibo=b.id_recibo and id_persona = #{id_persona} and anyo = #{anyo}
-  </select>
+	<select id="getId_persona" parameterType="java.util.HashMap"
+		resultType="java.util.HashMap">
+		SELECT * FROM ficha a, recibos b where a.id_recibo=b.id_recibo and
+		id_persona = #{id_persona} and anyo = #{anyo}
+	</select>
 
-  <select id="getOpciones" parameterType="java.util.HashMap" resultType="java.util.HashMap">
-    SELECT * FROM ficha_opcion where id_persona = #{id_persona} and anyo = #{anyo} and id_ficha=#{id_ficha}
-  </select>
+	<select id="getPersonaSalida" parameterType="java.util.HashMap"
+		resultType="java.util.HashMap">
+		SELECT * FROM ficha a, recibos b, salida c
+		where a.id_recibo=b.id_recibo and a.anyo=c.anyo and
+		id_persona=#{id_persona} and salida=#{salida}
+	</select>
 
-  <select id="getLicencia" parameterType="java.lang.Integer" resultType="java.util.HashMap">
-    SELECT * FROM rutas.licencias where anyo = #{anyo}
-  </select>
+	<select id="getPersonaAnyo" parameterType="java.util.HashMap"
+		resultType="java.util.HashMap">
+		SELECT * FROM ficha a, recibos b where a.id_recibo=b.id_recibo and
+		id_persona = #{id_persona} and anyo = #{anyo}
+	</select>
 
-  <select id="getLicencia2" parameterType="java.util.HashMap" resultType="java.util.HashMap">
-    SELECT * FROM licencias where anyo = #{anyo} and tipo_licencia=#{tipo_licencia}
-  </select>
+	<select id="getOpciones" parameterType="java.util.HashMap"
+		resultType="java.util.HashMap">
+		SELECT * FROM ficha_opcion where id_persona = #{id_persona} and anyo =
+		#{anyo} and id_ficha=#{id_ficha}
+	</select>
 
-  <select id="getFP" resultType="java.util.HashMap">
-    SELECT * FROM formapago where ficha='S'
-  </select>
+	<select id="getLicencia" parameterType="java.lang.Integer"
+		resultType="java.util.HashMap">
+		SELECT * FROM rutas.licencias where anyo = #{anyo}
+	</select>
 
-  <select id="getRecibo" resultType="java.util.HashMap">
-    SELECT * FROM ficha order by anyo, nrecibo, fecha, id_persona
-  </select>
+	<select id="getLicencia2" parameterType="java.util.HashMap"
+		resultType="java.util.HashMap">
+		SELECT * FROM licencias where anyo = #{anyo} and
+		tipo_licencia=#{tipo_licencia}
+	</select>
 
-  <select id="getCuota" parameterType="java.lang.Integer" resultType="java.util.HashMap">
-    SELECT * FROM cuotas where anyo=#{anyo}
-  </select>
+	<select id="getFP" resultType="java.util.HashMap">
+		SELECT * FROM formapago where ficha='S'
+	</select>
 
-  <update id="putRecibo" parameterType="java.util.HashMap">
-    UPDATE ficha SET id_recibo=#{id_recibo} WHERE id_persona=#{id_persona} and anyo=#{anyo} and fecha=#{fecha}
-  </update>
+	<select id="getRecibo" resultType="java.util.HashMap">
+		SELECT * FROM ficha order by anyo, nrecibo, fecha, id_persona
+	</select>
 
-  <update id="update" parameterType="java.util.HashMap">
-    UPDATE ficha SET tipo_licencia=#{tipo_licencia}, importecuota=#{importecuota}, adulto=#{adulto},
-                     importelicencia=#{importelicencia}, club=#{club}, fp=#{fp}, regalo=#{regalo},
-                     fecha=#{fecha}, id_recibo=#{id_recibo}
-     WHERE id_persona=#{id_persona} and anyo=#{anyo}
-  </update>
+	<select id="getCuota" parameterType="java.lang.Integer"
+		resultType="java.util.HashMap">
+		SELECT * FROM cuotas where anyo=#{anyo}
+	</select>
 
-  <insert id="insert" parameterType="java.util.HashMap">
-    INSERT INTO ficha
-                (id_persona, anyo, tipo_licencia, importecuota, adulto, importelicencia, club, fp,
-                 regalo, fecha, id_recibo)
-         VALUES (#{id_persona},#{anyo},#{tipo_licencia},#{importecuota},#{adulto},#{importelicencia},#{club},#{fp},
-                 #{regalo},#{fecha},#{id_recibo})
-  </insert>
+	<update id="putRecibo" parameterType="java.util.HashMap">
+		UPDATE ficha SET id_recibo=#{id_recibo} WHERE id_persona=#{id_persona} and
+		anyo=#{anyo} and fecha=#{fecha}
+	</update>
 
-  <insert id="insEstado" parameterType="java.util.HashMap">
-    INSERT INTO ficha_estado (id_persona, anyo, estado, fecha)
-         VALUES (#{id_persona},#{anyo},#{estado},#{fecha})
-  </insert>
+	<update id="update" parameterType="java.util.HashMap">
+		UPDATE ficha SET tipo_licencia=#{tipo_licencia},
+		importecuota=#{importecuota}, adulto=#{adulto},
+		importelicencia=#{importelicencia}, club=#{club}, fp=#{fp},
+		regalo=#{regalo},
+		fecha=#{fecha}, id_recibo=#{id_recibo}
+		WHERE id_persona=#{id_persona} and anyo=#{anyo}
+	</update>
+
+	<insert id="insert" parameterType="java.util.HashMap">
+		INSERT INTO ficha
+		(id_persona, anyo, tipo_licencia, importecuota, adulto, importelicencia, club, fp,
+		regalo, fecha, id_recibo)
+		VALUES
+		(#{id_persona},#{anyo},#{tipo_licencia},#{importecuota},#{adulto},#{importelicencia},#{club},#{fp},
+		#{regalo},#{fecha},#{id_recibo})
+	</insert>
+
+	<insert id="insEstado" parameterType="java.util.HashMap">
+		INSERT INTO ficha_estado (id_persona, anyo, estado, fecha)
+		VALUES (#{id_persona},#{anyo},#{estado},#{fecha})
+	</insert>
 </mapper>

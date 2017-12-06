@@ -7,6 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.json.Json;
 import javax.json.JsonArrayBuilder;
@@ -22,7 +24,8 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class Persona extends ActionSupport {
 	private static final long serialVersionUID = -5857465706561538985L;
-
+  private static final Logger log = Logger.getLogger(Persona.class.getName());
+  
 	private String grabar;
     private String cancel;
     private String grabarFicha;
@@ -59,6 +62,7 @@ public class Persona extends ActionSupport {
     private String regalo;
     private boolean is_usuaro = false;
     private String opciones;
+    private String salida;
 
     public List<Map<String, String>> getEstadosPago() {
         return FormaPago.getEstadosFicha();
@@ -330,6 +334,15 @@ public class Persona extends ActionSupport {
         this.is_usuaro = Boolean.parseBoolean(is_usuario);
     }
 
+    public String getSalida() {
+        return salida;
+    }
+
+    public void setSalida(String salida) {
+      log.log(Level.SEVERE, "salida: " + salida);
+        this.salida = salida;
+    }
+
     public String getOpciones() {
         JsonArrayBuilder opciones = Json.createArrayBuilder();
         for (Map<String, Object> bean: (List<Map<String, Object>>) getFicha().get("opciones")) {
@@ -355,7 +368,6 @@ public class Persona extends ActionSupport {
     }
 
     public static void putYo(Map<String, Object> bean) throws SQLException {
-        bean.put("anyo", Constante.FICHA_YEAR);
         Map<String, Object> ficha = Ficha.getPersonaAnyo(bean);
         bean.put("ficha", ficha);
         boolean esSocio = ficha!=null && ((BigDecimal) ficha.get("importecuota")).signum()!=0;
@@ -383,6 +395,7 @@ public class Persona extends ActionSupport {
             bean.put("domicilio", domicilio);
             bean.put("poblacion", poblacion);
             bean.put("provincia", provincia);
+            bean.put("salida", salida);
             if ("on".equals(correo)) {
                 bean.put("correo", true);
                 correo = " checked=\"checked\"";

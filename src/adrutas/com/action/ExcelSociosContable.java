@@ -36,7 +36,7 @@ public class ExcelSociosContable extends ActionSupport {
         Map<String, Object> map = new HashMap<String, Object>();
         CellStyle style = wb.createCellStyle();
         style.setDataFormat(wb.createDataFormat().getFormat("dd/mm/yy;@"));
-        map.put("lAnyo", ExcelSocios.getYears(cal));
+        map.put("anyo", ExcelSocios.getYears(cal));
         Cell cell;
         Row row = sheet.createRow(0);
         int fil = 1;

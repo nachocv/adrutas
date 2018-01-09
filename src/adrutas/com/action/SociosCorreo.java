@@ -39,7 +39,7 @@ public class SociosCorreo extends ActionSupport {
         row.createCell(0).setCellValue("linea1");
         row.createCell(1).setCellValue("linea2");
         row.createCell(2).setCellValue("linea3");
-        map.put("lAnyo", ExcelSocios.getYears(cal));
+        map.put("anyo", ExcelSocios.getYears(cal));
         for (Map<String, Object> bean: Persona.getSociosCorreo(map)) {
             (row = sheet.createRow(fil++)).createCell(0).setCellValue(bean.get("nombre") + ((parameter1 = (String)
                             bean.get("apellido1"))==null? "": (" " + parameter1)) + ((parameter1 = (String)

@@ -34,21 +34,19 @@ public class ExcelSocios extends ActionSupport {
         "Phone2","importelicencia","importecuota","tipo_licencia","id_recibo","fp","fecha","adulto",
         "club","anyo"};
 
-    public static List<Integer> getYears(Calendar cal) {
-        List<Integer> list = new ArrayList<Integer>();
+    public static Integer getYears(Calendar cal) {
         int year = cal.get(Calendar.YEAR);
-        list.add(year);
         if (cal.get(Calendar.MONTH)<2) {
-            list.add(year-1);
+            return year-1;
         }
-        return list;
+        return year;
     }
     public String execute() throws IOException {
         HSSFWorkbook workbook = new HSSFWorkbook();
         HSSFSheet sheet = workbook.createSheet("Socios");
         Calendar cal = new GregorianCalendar();
         Map<String, Object> map = new HashMap<String, Object>();
-        map.put("lAnyo", getYears(cal));
+        map.put("anyo", getYears(cal));
         List<Map<String, Object>> reg = Persona.getFichas(map);
         Cell cell;
         Row row = sheet.createRow(0);

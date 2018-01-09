@@ -45,7 +45,7 @@ public class ExcelEtiquetasSocios extends ActionSupport {
         row.createCell(0).setCellValue("linea1");
         row.createCell(1).setCellValue("linea2");
         row.createCell(2).setCellValue("linea3");
-        map.put("lAnyo", ExcelSocios.getYears(cal));
+        map.put("anyo", ExcelSocios.getYears(cal));
         map.put("no_email", no_email);
         for (Map<String, Object> bean: Persona.getSocios(map)) {
             (row = sheet.createRow(fil++)).createCell(0).setCellValue(bean.get("nombre") + ((parameter1 = (String)

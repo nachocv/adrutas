@@ -178,10 +178,7 @@ LEFT JOIN (select id_persona, telefono from (select id_persona, orden, telefono 
   <select id="getSocios" parameterType="java.util.HashMap" resultType="java.util.HashMap">
     SELECT *
      FROM persona
-    where id_persona in (select id_persona from ficha where anyo in
-    <foreach item="anyo" collection="lAnyo" open="(" separator="," close=")">
-      #{anyo}
-    </foreach> 
+    where id_persona in (select id_persona from ficha where anyoanyo>=#{anyo}
       and importecuota!=0)
     <if test="no_email">
       and id_persona not in (select id_persona from socio_email)
@@ -203,10 +200,7 @@ LEFT JOIN (select id_persona, telefono from (select id_persona, orden, telefono 
      ifnull((select telefono from socio_telefono d where a.id_persona=d.id_persona and d.Orden=1),'') 'Phone2',
      ifnull((select telefono from socio_telefono d where a.id_persona=d.id_persona and d.Orden=2),'') 'Phone3'
      FROM persona a, ficha b
-    where a.id_persona=b.id_persona and b.importecuota!=0 and b.anyo in
-		<foreach item="anyo" collection="lAnyo" open="(" separator="," close=")">
-	    #{anyo}
-		</foreach>
+    where a.id_persona=b.id_persona and b.importecuota!=0 and b.anyo>=#{anyo}
     <if test="no_email">
       and a.id_persona not in (select id_persona from socio_email)
     </if>

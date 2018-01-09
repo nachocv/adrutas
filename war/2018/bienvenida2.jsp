@@ -27,8 +27,8 @@
       <br/>
       <li>ZONA SOCIOS
         <ul>
+          <li><a href="/2018/programa_web_2018.pdf" target="_new">Programa 2018</a></li>
           <li><a href="/2017/programa.pdf" target="_new">Programa 2017</a></li>
-          <li><a href="/2016/programa.pdf" target="_new">Programa 2016</a></li>
           <li><a href="javascript:void(0)" onclick="emergeFrame('seguroIntermundial');">Seguro Intermundial 2018</a></li>
           <li><a href="/2015/seguros/diario/coberturas.pdf" target="_new">Seguro Diario</a></li>
           <li><a href="javascript:void(0)" onclick="emergeFrame('documentos');">Documentos</a></li>

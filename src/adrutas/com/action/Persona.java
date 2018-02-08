@@ -339,7 +339,6 @@ public class Persona extends ActionSupport {
     }
 
     public void setSalida(String salida) {
-      log.log(Level.SEVERE, "salida: " + salida);
         this.salida = salida;
     }
 
@@ -368,6 +367,7 @@ public class Persona extends ActionSupport {
     }
 
     public static void putYo(Map<String, Object> bean) throws SQLException {
+      log.log(Level.SEVERE, "año: " + bean.get("anyo"));
         Map<String, Object> ficha = Ficha.getPersonaAnyo(bean);
         bean.put("ficha", ficha);
         boolean esSocio = ficha!=null && ((BigDecimal) ficha.get("importecuota")).signum()!=0;

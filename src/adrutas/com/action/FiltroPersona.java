@@ -308,4 +308,12 @@ public class FiltroPersona extends ActionSupport {
         }
         return null;
     }
+
+	public static void main(String[] args) {
+	  String dni = "Y0807113B";
+	  Map<String, Object> bean = new HashMap<String, Object>();
+	  bean.putAll(adrutas.com.dao.Persona.normalizaDni(dni));
+	  System.out.println(dni  + ". tipoIdentificacion: " + bean.get("tipoIdentificacion")
+	      + ". Dni normalizado: " + bean.get("dni"));
+	}
 }

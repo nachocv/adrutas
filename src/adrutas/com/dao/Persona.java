@@ -182,13 +182,13 @@ public class Persona {
             map.put("dni", Constante.nF3.format(number));
         } else if (Constante.PATTERN_NIE3.matcher(dni).matches()) {
             inicio = dni.substring(0, 1);
-            number = Integer.parseInt(dni.substring(1, dni.length()-1));
+            number = Integer.parseInt(Constante.INICIO_NIE.indexOf(inicio) + dni.substring(1, dni.length()-1));
             if ((letra = dni.charAt(dni.length()-1))==Constante.LETRAS_NIE.charAt(number%23)) {
                 map.put("tipoIdentificacion", 2);
             } else {
                 map.put("tipoIdentificacion", 6);
             }
-            map.put("dni", inicio + Constante.nF3.format(number).substring(1) + letra);
+            map.put("dni", dni);
         } else if (Constante.PATTERN_NIE_SIN.matcher(dni).matches()) {
             inicio = dni.substring(0, 1);
             map.put("tipoIdentificacion", 7);
@@ -637,28 +637,10 @@ public class Persona {
     }
 
     public static Map<String, String> put(Map<String, Object> bean) throws Exception {
-        String dni;
         String date;
         SqlSession session = Constante.getSession();
         Map<String, String> error = new HashMap<String, String>();
         try {
-            if (!(dni = (String) bean.get("dni")).isEmpty()) {
-                bean.putAll(normalizaDni(dni));
-                switch ((int) bean.get("tipoIdentificacion")) {
-                case 4:
-                    error.put("dni", "Letra NIF incorrecta");
-                    break;
-                case 5:
-                    error.put("dni", "Falta letra del NIF");
-                    break;
-                case 6:
-                    error.put("dni", "Letra NIE incorrecta");
-                    break;
-                case 7:
-                    error.put("dni", "Falta letra del NIE");
-                    break;
-                }
-            }
             if (((String) bean.get("nombre")).isEmpty()) {
                 error.put("nombre", "No puede estar vacio");
             }

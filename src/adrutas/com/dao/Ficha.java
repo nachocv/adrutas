@@ -108,6 +108,7 @@ public class Ficha implements Serializable {
     public static Map<String, Object> getPersonaAnyo(Map<String, Object> bean) throws SQLException {
         SqlSession session = Constante.getSession();
         try {
+          log.log(Level.SEVERE, "año: " + bean.get("anyo"));
             Map<String, Object> salida = session.selectOne("ficha.getPersonaAnyo", bean);
             if (salida==null) {
                 salida = newFicha(((Integer) bean.get("anyo")).toString());

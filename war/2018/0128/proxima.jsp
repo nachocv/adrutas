@@ -16,7 +16,11 @@
     <table style="width: 100%;">
       <tr>
         <td colspan="2">
-          <a href='/2018/0128/programa.png' target='_new'><img src="/2018/0128/programa_s.png" class="right"/></a>
+          <font color="blue"><b>
+            Es obligatorio llevar crampones y piolet para la opción A
+            <br/>Son convenientes raquetas de nieve para la opción B
+          </b></font>
+          <br/><br/><a href='/2018/0128/programa.png' target='_new'><img src="/2018/0128/programa_s.png" class="right"/></a>
           <font color="blue">Ruta: </font>Horcajo de la Sierra-Cerro de las Portillas-Cebollera Nueva-Tres Provincias-Pto. Somosierra
           <br/><br/><font color="blue">Alternativa: </font>Horcajo de la Sierra-Cerro de las Portillas-Pto. Somosierra
           <br/><br/><b><a href="/2018/0128/tracks.zip">Estos tracks</a> <font color="red">son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club</font></b>. <a href="/2018/0128/180128_a.gpx" target='_new'>Track A</a>, <a href="/2018/0128/180128_b.gpx" target='_new'>track B</a>

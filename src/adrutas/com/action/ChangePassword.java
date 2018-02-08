@@ -1,9 +1,12 @@
 package adrutas.com.action;
 
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.apache.struts2.ServletActionContext;
 
+import adrutas.com.Constante;
 import adrutas.com.dao.Link;
 import adrutas.com.dao.Persona;
 
@@ -11,6 +14,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class ChangePassword extends ActionSupport {
     private static final long serialVersionUID = -3688087567541395378L;
+    private static final Logger log = Logger.getLogger(ChangePassword.class.getName());
 
     private String link;
     private String grabar;
@@ -44,6 +48,8 @@ public class ChangePassword extends ActionSupport {
             return "change";
         } else {
             Map<String, Object> map = Link.get(link);
+            map.put("anyo", Constante.FICHA_YEAR);
+            log.log(Level.SEVERE, "año: " + map.get("anyo"));
             if (map!=null) {
                 adrutas.com.action.Persona.putYo(map);
             } else {

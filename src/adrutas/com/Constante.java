@@ -50,6 +50,7 @@ public final class Constante {
     public static final DateFormat dF10 = new SimpleDateFormat("HH:mm", locale);
     public static int FICHA_YEAR;
     public static final String LETRAS_NIE = "TRWAGMYFPDXBNJZSQVHLCKE";
+    public static final String INICIO_NIE = "XYZ";
     public static final Pattern PATTERN_NOMBRE = Pattern.compile("[\\p{IsL} ]+");
     public static final Pattern PATTERN_NIF1 = Pattern.compile("\\p{Digit}{1,8}|\\p{Digit}{1,8}[" + LETRAS_NIE + "]");
     public static final Pattern PATTERN_NIF2 = Pattern.compile("\\p{Digit}{1,8}[" + LETRAS_NIE + "]");

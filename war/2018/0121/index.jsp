@@ -22,7 +22,7 @@
 <%@ include file="/2018/bienvenida.jsp"%>
               </td>
               <td>
-<%@ include file="/2018/0217/aviso1.jsp"%>
+<%@ include file="/2018/0216/aviso1.jsp"%>
 <%@ include file="/2018/0121/proxima.jsp"%>
 <%@ include file="/2016/ventajas_socio.jsp"%>
               </td>

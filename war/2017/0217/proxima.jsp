@@ -11,24 +11,24 @@
       <tr>
         <td colspan="2">
           <font color="blue"><b>Es obligatorio llevar crampones y piolet para las opciones A y B del sábado, subida al Moncayo</b></font>
-          <br/><br/><img src="/2017/0217/portada.jpg" class="right" width="460px"/>
+          <br/><br/><img src="/2017/0216/portada.jpg" class="right" width="460px"/>
         </td>
       </tr>
       <tr>
         <td colspan='2'>
-          <br/><br/><a href="/2017/0217/tracks.zip" target='_new'>Estos tracks</a> son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club.
+          <br/><br/><a href="/2017/0216/tracks.zip" target='_new'>Estos tracks</a> son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club.
           <ul>
-            <li><a href="/2017/0217/170218_a.gpx" target='_new'>Día 18 A</a></li>
-            <li><a href="/2017/0217/170218_b.gpx" target='_new'>Día 18 B</a></li>
-            <li><a href="/2017/0217/170218_c.gpx" target='_new'>Día 18 C</a></li>
-            <li><a href="/2017/0217/170219_a.gpx" target='_new'>Día 19 A</a></li>
-            <li><a href="/2017/0217/170219_b.gpx" target='_new'>Día 19 B</a></li>
+            <li><a href="/2017/0216/170218_a.gpx" target='_new'>Día 18 A</a></li>
+            <li><a href="/2017/0216/170218_b.gpx" target='_new'>Día 18 B</a></li>
+            <li><a href="/2017/0216/170218_c.gpx" target='_new'>Día 18 C</a></li>
+            <li><a href="/2017/0216/170219_a.gpx" target='_new'>Día 19 A</a></li>
+            <li><a href="/2017/0216/170219_b.gpx" target='_new'>Día 19 B</a></li>
           </ul>
         </td>
       </tr>
       <tr>
         <td align="center" colspan='2'>
-          <a href="/2017/0217/programa.pdf" target="_new">Programa</a>
+          <a href="/2017/0216/programa.pdf" target="_new">Programa</a>
         </td>
       </tr>
     </table>

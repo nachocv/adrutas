@@ -40,9 +40,9 @@
       <tr>
         <td height="81">JUNIO<br/>9 y 10</td>
         <td>
-          <a href="/2018/0609/programa.png" target="_new"><img src="/2018/0609/programa_s.png"/></a>
+          <a href="/2018/0608/programa.png" target="_new"><img src="/2018/0608/programa_s.png"/></a>
         </td>
-        <td>Montes Obarenses-Burgos</td>
+        <td>Montes Obarenes-Burgos</td>
         <td>
         </td>
       </tr>

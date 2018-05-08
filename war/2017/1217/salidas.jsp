@@ -12,7 +12,7 @@
       <tr>
         <td height="81">FEBRERO<br/>17 y 18</td>
         <td>
-          <a href="/2018/0217/programa.png" target="_new"><img src="/2018/0217/programa_s.png"/></a>
+          <a href="/2018/0216/programa.png" target="_new"><img src="/2018/0216/programa_s.png"/></a>
         </td>
         <td>Sierra de Bernia y Sierra Helada</td>
         <td>
@@ -30,7 +30,7 @@
       <tr>
         <td height="81">ABRIL<br/>28/04-02/05</td>
         <td>
-          <a href="/2018/0428/programa.png" target="_new"><img src="/2018/0428/programa_s.png"/></a>
+          <a href="/2018/0427/programa.png" target="_new"><img src="/2018/0427/programa_s.png"/></a>
         </td>
         <td>Andorra-Canillo</td>
         <td>

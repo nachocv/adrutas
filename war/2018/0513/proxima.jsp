@@ -19,12 +19,13 @@
           <a href='/2018/0513/programa.png' target='_new'><img src="/2018/0513/programa_s.png" class="right"/></a>
           <font color="blue">Ruta A: </font>La Barranca-la Ventana-Maliciosa-Cdo- los Pastores-Cerro Ortigoso-Canto Cochino
           <br/><br/><font color="blue">Ruta B: </font>La Barranca-Cdo. el Piornal-Puente de los Manchegos-Canto Cochino
-          <br/><br/><b><a href="/2018/0513/tracks.zip">Estos tracks</a> <font color="red">son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club</font></b>. <a href="/2018/0513/180513_a.gpx" target='_new'>Track A</a>, <a href="/2018/0513/180513_b.gpx" target='_new'>track B</a>
+          <br/><br/><b><a href="/2018/0513/tracks.zip">Estos tracks</a> <font color="red">son sólo orientativos y tienen como único objetivo servir de apoyo durante las marchas organizadas por el club</font></b>. <a href="/2018/0513/180513_a.gpx" target='_new'>Track A</a>, <a href="/2018/0513/180513_b.gpx" target='_new'>track B</a>, <a href="/2018/0513/180513_c.gpx" target='_new'>track C</a>
         </td>
       </tr>
       <tr>
         <td align="center" colspan='2'>
-          <a href="/2018/0513/mapa_180513.pdf" target="_new">Mapa</a>
+          <a href="/2018/0513/mapa_180513_1.pdf" target="_new">Mapa 1</a>
+          <br/><a href="/2018/0513/mapa_180513_2.pdf" target="_new">Mapa 2</a>
         </td>
       </tr>
       <tr>

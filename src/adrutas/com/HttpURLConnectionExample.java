@@ -18,7 +18,7 @@ import javax.net.ssl.HttpsURLConnection;
 
 import sun.net.www.http.HttpClient;
 
-import com.google.appengine.repackaged.com.google.api.client.http.HttpResponse;
+//import com.google.appengine.repackaged.com.google.api.client.http.HttpResponse;
 
 public class HttpURLConnectionExample {
 	private static DateFormat dF = new SimpleDateFormat("yyyyMMdd|HHmm");
@@ -35,35 +35,35 @@ public class HttpURLConnectionExample {
 		}
 	}
 
-	public static void main(String[] args) throws Exception {
-		send(login());
-		send(altalicencia());
-		String url = "http://www.google.com/search?q=developer";
-
-		HttpClient client = new DefaultHttpClient();
-		HttpGet request = new HttpGet(url);
-
-		// add request header
-		request.addHeader("User-Agent", USER_AGENT);
-
-		HttpResponse response = client.execute(request);
-
-		System.out.println("\nSending 'GET' request to URL : " + url);
-		System.out.println("Response Code : " + 
-                       response.getStatusLine().getStatusCode());
-
-		BufferedReader rd = new BufferedReader(
-                       new InputStreamReader(response.getEntity().getContent()));
-
-		StringBuffer result = new StringBuffer();
-		String line = "";
-		while ((line = rd.readLine()) != null) {
-			result.append(line);
-		}
-
-		System.out.println(result.toString());
-
-	}
+//	public static void main(String[] args) throws Exception {
+//		send(login());
+//		send(altalicencia());
+//		String url = "http://www.google.com/search?q=developer";
+//
+//		HttpClient client = new DefaultHttpClient();
+//		HttpGet request = new HttpGet(url);
+//
+//		// add request header
+//		request.addHeader("User-Agent", USER_AGENT);
+//
+//		HttpResponse response = client.execute(request);
+//
+//		System.out.println("\nSending 'GET' request to URL : " + url);
+//		System.out.println("Response Code : " + 
+//                       response.getStatusLine().getStatusCode());
+//
+//		BufferedReader rd = new BufferedReader(
+//                       new InputStreamReader(response.getEntity().getContent()));
+//
+//		StringBuffer result = new StringBuffer();
+//		String line = "";
+//		while ((line = rd.readLine()) != null) {
+//			result.append(line);
+//		}
+//
+//		System.out.println(result.toString());
+//
+//	}
 
 	private static void send(URL url) throws IOException {
 		HttpURLConnection con = (HttpURLConnection) url.openConnection();

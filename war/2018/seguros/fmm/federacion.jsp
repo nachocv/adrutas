@@ -17,7 +17,7 @@
       <br/><a href="http://www.fmm.es/federacion-montana/tramites/accidentado/tramita-un-parte" target="_new">Tramitar un parte de accidente</a>
       <br/><a href="http://www.fmm.es/federacion-montana/tramites/10-razones-para-federarte" target="_new">10 Razones para federarte</a>
       <br/><a href="http://www.fmm.es/federacion-montana/tramites/recomendaciones-viajes-extranjero" target="_new">Recomendaciones viaje</a>
-      <br/><a href="https://fmmlicencias.com/fmm/accesofederado.aspx" target="_new">Apliación, duplicado, domiciliación y cambio de datos</a>
+      <br/><a href="https://fmmlicencias.com/fmm/accesofederado.aspx" target="_new">Ampliación, duplicado, domiciliación y cambio de datos</a>
       <br/><a href="http://www.fmmlicencias.com/ventajas/pub2/home.asp" target="_new">Ventajas al federado</a>
       <br/><a href="http://www.fmm.es/federacion-montana/tramites/accidentado/poliza-de-seguros" target="_new">Condiciones particulares de la póliza de accidentes</a>
       <br/><a href="/2018/seguros/fmm/centros-medicos_sep16.pdf" target="_new">Centros concertados MAPFRE</a>

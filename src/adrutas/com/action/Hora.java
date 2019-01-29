@@ -43,11 +43,11 @@ public class Hora extends ActionSupport {
                 salida += "<tr><td>fecha_tipo: " + bean.get("fecha_tipo") + " " + Constante.dF2.format(new Date(timestamp.getTime()))
                                 + ". TimeMillis:</td><td>" + timestamp.getTime() + "</td></tr>";
             }
-            if (Salida.abierta(1506)) {
-                salida += "<tr><td>abierta</td></tr>";
-            } else {
-                salida += "<tr><td>cerrada</td></tr>";
-            }
+//            if (Salida.abierta(1506)) {
+//                salida += "<tr><td>abierta</td></tr>";
+//            } else {
+//                salida += "<tr><td>cerrada</td></tr>";
+//            }
             salida += "</table>";
         } catch (Exception e) {
             throw e;

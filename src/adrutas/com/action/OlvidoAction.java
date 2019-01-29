@@ -63,21 +63,21 @@ public class OlvidoAction extends ActionSupport {
         Mail.sendMail(mArgs);
     }
 
-    public String execute() {
-        Map<String, Object> map = new HashMap<String, Object>();
-        map.put("email", email);
-        try {
-            List<Map<String, Object>> list = Persona.get(map);
-            if (list.size()==1) {
-                map = list.get(0);
-                map.put("password", getRndStr(Constante.r, 10));
-                sendPassword(persona);
-                Persona.update(map);
-            }
-            return mapping.findForward("ok");
-        } catch (PersistenceException e) {
-            log.log(Level.SEVERE, "Lista usuario", e);
-            return mapping.findForward("cancel");
-        }
-	}
+//    public String execute() {
+//        Map<String, Object> map = new HashMap<String, Object>();
+//        map.put("email", email);
+//        try {
+//            List<Map<String, Object>> list = Persona.get(map);
+//            if (list.size()==1) {
+//                map = list.get(0);
+//                map.put("password", getRndStr(Constante.r, 10));
+//                sendPassword(persona);
+//                Persona.update(map);
+//            }
+//            return mapping.findForward("ok");
+//        } catch (PersistenceException e) {
+//            log.log(Level.SEVERE, "Lista usuario", e);
+//            return mapping.findForward("cancel");
+//        }
+//	}
 }
